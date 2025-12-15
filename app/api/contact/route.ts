@@ -22,14 +22,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const formspreeFormId = process.env.FORMSPREE_FORM_ID;
-    if (!formspreeFormId) {
-      console.error("FORMSPREE_FORM_ID n'est pas défini dans l'environnement.");
-      return NextResponse.json(
-        { error: "Le service de contact n'est pas configuré." },
-        { status: 500 }
-      );
-    }
+    // Utilise la variable d'environnement si définie, sinon l'ID fourni par toi
+    const formspreeFormId = process.env.FORMSPREE_FORM_ID ?? "mqaroaav";
 
     const formspreeResponse = await fetch(`https://formspree.io/f/${formspreeFormId}`, {
       method: "POST",

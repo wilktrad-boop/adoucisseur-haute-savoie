@@ -22,3 +22,4 @@ export type DepartementConfig = typeof departementConfig;
 
 
 
+
