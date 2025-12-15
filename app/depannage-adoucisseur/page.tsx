@@ -48,9 +48,7 @@ export default function DepannagePage() {
           Dépannage d'adoucisseur d'eau en {departementConfig.departementName}
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl">
-          Votre adoucisseur d'eau ne fonctionne plus correctement ? Notre service de dépannage
-          intervient rapidement dans toute la {departementConfig.departementName} pour diagnostiquer et réparer votre appareil.
-          Intervention d'urgence disponible pour les pannes critiques.
+          Un dysfonctionnement bloque votre système de traitement de l'eau ? Nos techniciens interviennent en urgence sur l'ensemble du territoire haut-savoyard pour identifier l'origine du problème et restaurer le fonctionnement optimal de votre équipement. Disponibilité 7j/7 pour les situations critiques.
         </p>
       </Section>
 
@@ -58,74 +56,65 @@ export default function DepannagePage() {
         <div className="max-w-4xl mx-auto space-y-12">
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Problèmes courants avec un adoucisseur d'eau
+              Pannes fréquemment rencontrées sur les adoucisseurs
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Plusieurs problèmes peuvent affecter le fonctionnement d'un adoucisseur d'eau.
-                Voici les pannes les plus courantes :
+                Diverses défaillances peuvent compromettre l'efficacité de votre installation. Panorama des incidents les plus récurrents :
               </p>
               
               <div className="space-y-4">
                 <div className="bg-red-50 border-l-4 border-red-400 p-4">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    L'adoucisseur ne se régénère plus
+                    Blocage du cycle de régénération
                   </h3>
                   <p>
-                    Causes possibles : problème de programmation, vanne défectueuse, résine
-                    saturée, problème électrique. Un professionnel peut diagnostiquer et réparer
-                    le problème.
+                    Origines fréquentes : paramétrage erroné, dysfonctionnement de la vanne multivoies, encrassement de la résine, coupure électrique. Nécessite un diagnostic technique approfondi.
                   </p>
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-400 p-4">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Eau non adoucie ou mal adoucie
+                    Perte d'efficacité du traitement
                   </h3>
                   <p>
-                    L'eau reste dure malgré l'adoucisseur. Causes possibles : résine usée ou
-                    saturée, problème de régénération, réglages incorrects, vanne défectueuse.
+                    Le calcaire réapparaît malgré l'appareil en service. Pistes d'investigation : résine épuisée ou colmatée, défaut de régénération, réglages inadaptés, vanne endommagée.
                   </p>
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-400 p-4">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Fuite d'eau
+                    Infiltrations hydrauliques
                   </h3>
                   <p>
-                    Présence d'eau autour de l'adoucisseur. Causes possibles : joint défectueux,
-                    raccordement mal serré, vanne qui fuit, réservoir fissuré. Intervention
-                    urgente recommandée.
+                    Flaque d'eau persistante sous l'installation. Suspects habituels : joint d'étanchéité dégradé, serrage insuffisant, vanne perforée, cuve fissurée. Réparation prioritaire indispensable.
                   </p>
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-400 p-4">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Consommation excessive de sel
+                    Surconsommation de pastilles régénérantes
                   </h3>
                   <p>
-                    Le sel se consomme trop rapidement. Causes possibles : régénération trop
-                    fréquente, problème de programmation, fuite dans le bac à sel.
+                    Vidange anormalement rapide du bac à saumure. Explications probables : cycles trop rapprochés, mauvais calibrage, infiltration d'eau dans le réservoir.
                   </p>
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-400 p-4">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Bruit anormal
+                    Nuisances acoustiques
                   </h3>
                   <p>
-                    L'adoucisseur fait des bruits inhabituels. Causes possibles : problème de
-                    vanne, résine qui bouge, problème de pompe, encrassement.
+                    Sons inhabituels lors du fonctionnement. Sources potentielles : vanne grippée, résine mobile, moteur défaillant, conduits entartrés.
                   </p>
                 </div>
 
                 <div className="bg-red-50 border-l-4 border-red-400 p-4">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    Eau salée au robinet
+                    Saveur salée de l'eau traitée
                   </h3>
                   <p>
-                    L'eau a un goût salé. Causes possibles : problème de régénération, vanne qui
-                    reste ouverte, résine saturée. Problème à résoudre rapidement.
+                    Goût prononcé de chlorure de sodium. Hypothèses : défaut de rinçage post-régénération, vanne bloquée en position lavage, média saturé. Intervention urgente requise.
                   </p>
                 </div>
               </div>
@@ -134,36 +123,30 @@ export default function DepannagePage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Diagnostic et réparation par un professionnel
+              L'intervention d'un technicien qualifié
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                En cas de panne, il est recommandé de faire appel à un professionnel qui pourra :
+                Face à une défaillance, solliciter un expert permet de bénéficier de :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Diagnostiquer le problème :</strong> Identification précise de la cause
-                  de la panne grâce à un diagnostic complet
+                  <strong>Analyse technique approfondie :</strong> Détection méthodique de l'origine exacte du dysfonctionnement via tests et mesures
                 </li>
                 <li>
-                  <strong>Proposer une solution :</strong> Réparation, remplacement de pièces, ou
-                  remplacement de l'appareil si nécessaire
+                  <strong>Recommandations sur mesure :</strong> Remise en état, changement de composants ou renouvellement complet selon le cas
                 </li>
                 <li>
-                  <strong>Intervenir rapidement :</strong> Intervention sous 24 à 48h pour les
-                  pannes non urgentes, intervention d'urgence disponible
+                  <strong>Réactivité adaptée :</strong> Délai de 24-48h en situation normale, mobilisation express pour les urgences avérées
                 </li>
                 <li>
-                  <strong>Garantir la réparation :</strong> Travaux garantis avec pièces de
-                  qualité
+                  <strong>Garantie des prestations :</strong> Engagement sur les réparations effectuées, utilisation de pièces certifiées constructeur
                 </li>
               </ul>
               <p>
-                Ne tentez pas de réparer vous-même un adoucisseur, surtout en cas de problème
-                électrique ou de fuite. Un professionnel dispose des compétences et des outils
-                nécessaires pour intervenir en toute sécurité. Pour éviter les pannes, pensez à programmer un{" "}
+                Évitez toute manipulation hasardeuse, particulièrement sur les circuits électriques ou en présence de fuites importantes. Seul un professionnel possède l'expertise et l'outillage pour opérer sans risque. La prévention reste le meilleur remède – programmez un{" "}
                 <Link href="/entretien-adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  entretien régulier de votre adoucisseur
+                  suivi préventif annuel de votre installation
                 </Link>.
               </p>
             </div>
@@ -171,19 +154,18 @@ export default function DepannagePage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Intervention d'urgence en {departementConfig.departementName}
+              Service express pour situations critiques en {departementConfig.departementName}
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Pour les pannes critiques (fuite importante, eau salée, panne totale), nous
-                proposons un service d'intervention d'urgence disponible dans tout le département :
+                Lors de défaillances majeures (écoulement abondant, contamination saline, arrêt complet du système), notre réseau de dépanneurs assure une couverture départementale complète :
               </p>
               <div className="bg-primary-50 p-6 rounded-lg">
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Intervention sous 24h pour les urgences</li>
-                  <li>Disponibilité à {departementConfig.mainCities.slice(0, 5).join(", ")} et partout en {departementConfig.departementName}</li>
-                  <li>Diagnostic rapide et solution immédiate si possible</li>
-                  <li>Devis transparent avant toute intervention</li>
+                  <li>Mobilisation sous 24 heures pour toute urgence constatée</li>
+                  <li>Maillage territorial incluant {departementConfig.mainCities.slice(0, 5).join(", ")} et l'ensemble des communes de {departementConfig.departementName}</li>
+                  <li>Analyse sur site et résolution immédiate lorsque la situation le permet</li>
+                  <li>Chiffrage détaillé communiqué avant démarrage des travaux</li>
                 </ul>
               </div>
               <p>
@@ -206,28 +188,26 @@ export default function DepannagePage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Quand remplacer plutôt que réparer ?
+              Réparation ou renouvellement : critères de décision
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Parfois, il est plus économique de remplacer un adoucisseur plutôt que de le
-                réparer. C'est le cas notamment si :
+                Certaines situations rendent le remplacement plus judicieux économiquement que la remise en état. Éléments d'arbitrage :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>L'appareil est très ancien (plus de 15 ans)</li>
-                <li>Le coût de réparation dépasse 50% du prix d'un nouvel appareil</li>
-                <li>Plusieurs pannes se succèdent</li>
-                <li>L'appareil est obsolète et les pièces sont difficiles à trouver</li>
-                <li>La consommation d'énergie est excessive</li>
+                <li>Ancienneté supérieure à 15 années de fonctionnement</li>
+                <li>Facture de réparation excédant la moitié de la valeur d'un équipement neuf</li>
+                <li>Défaillances répétées et récurrentes</li>
+                <li>Technologie dépassée rendant l'approvisionnement en pièces problématique</li>
+                <li>Rendement énergétique médiocre par rapport aux standards actuels</li>
               </ul>
               <p>
-                Un professionnel peut vous conseiller sur l'opportunité de réparer ou de remplacer
-                votre adoucisseur en fonction de votre situation. Si un remplacement est nécessaire, découvrez nos{" "}
+                Nos techniciens vous orientent objectivement vers la solution la plus pertinente pour votre contexte. En cas de renouvellement préconisé, explorez nos{" "}
                 <Link href="/adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  services d'installation d'adoucisseur en {departementConfig.departementName}
-                </Link> et consultez nos{" "}
+                  offres d'installation clé en main en {departementConfig.departementName}
+                </Link> et parcourez notre{" "}
                 <Link href="/prix-adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  tarifs pour l'achat et la pose d'un adoucisseur
+                  grille tarifaire fourniture et pose
                 </Link>.
               </p>
             </div>

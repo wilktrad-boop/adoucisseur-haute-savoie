@@ -143,10 +143,10 @@ export default function Home() {
       <Section className="py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Pourquoi installer un adoucisseur d'eau ?
+            Les bénéfices concrets d'un adoucisseur d'eau
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
-            Entre le lac d'Annecy, le Chablais et la vallée de l'Arve, l'eau de la {departementConfig.departementName} reste chargée en calcaire. Un adoucisseur d'eau vous apporte de nombreux avantages au quotidien.
+            Du bassin annécien aux montagnes du Chablais, la teneur calcaire de l'eau représente un défi pour vos équipements domestiques. Découvrez comment un système d'adoucissement améliore votre quotidien.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
@@ -166,11 +166,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Protection de vos appareils
+                Préservez vos équipements
               </h3>
               <p className="text-gray-600">
-                Réduisez l'usure de vos appareils électroménagers (lave-linge, lave-vaisselle,
-                chauffe-eau) et prolongez leur durée de vie.
+                Éliminez le tartre qui endommage vos machines à laver, ballons d'eau chaude et autres équipements. Multipliez leur espérance de vie par deux.
               </p>
             </div>
 
@@ -190,10 +189,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Économies d'énergie</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Réduisez votre facture énergétique</h3>
               <p className="text-gray-600">
-                Moins de calcaire = moins de consommation d'énergie. Vos appareils fonctionnent plus
-                efficacement.
+                Un chauffe-eau sans dépôts calcaires consomme jusqu'à 15% d'électricité en moins. L'investissement se rentabilise rapidement.
               </p>
             </div>
 
@@ -213,10 +211,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Confort au quotidien</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Un bien-être immédiat</h3>
               <p className="text-gray-600">
-                Eau plus douce pour la peau et les cheveux, lessive plus efficace, vaisselle plus
-                brillante.
+                Redécouvrez une peau souple après la douche, des cheveux plus doux et une vaisselle étincelante sans traces blanches.
               </p>
             </div>
 
@@ -236,9 +233,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Moins de produits d'entretien</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Divisez vos achats de produits ménagers</h3>
               <p className="text-gray-600">
-                Réduisez votre consommation de produits lessiviels et d'entretien jusqu'à 50%.
+                Savons, lessives, produits anti-calcaire : vos besoins diminuent de moitié grâce à l'action naturelle de l'eau adoucie.
               </p>
             </div>
 
@@ -258,10 +255,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Installation professionnelle</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Mise en place express</h3>
               <p className="text-gray-600">
-                Installation rapide (2-4h) par nos professionnels certifiés. Mise en service
-                immédiate.
+                En quelques heures, nos techniciens qualifiés installent votre système et le paramètrent selon vos besoins spécifiques.
               </p>
             </div>
 
@@ -281,10 +277,9 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Entretien et SAV</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Suivi et maintenance garantis</h3>
               <p className="text-gray-600">
-                Service après-vente disponible. Contrats d'entretien pour garantir le bon
-                fonctionnement.
+                Bénéficiez d'un accompagnement sur la durée avec nos formules de maintenance préventive et notre assistance technique.
               </p>
             </div>
           </div>
@@ -295,10 +290,10 @@ export default function Home() {
       <Section className="bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Nos services
+            Notre expertise à votre service
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
-            Des solutions complètes pour tous vos besoins en adoucisseur d'eau
+            De l'installation initiale au dépannage urgent, nous couvrons l'ensemble du cycle de vie de votre équipement
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link
@@ -309,7 +304,7 @@ export default function Home() {
                 Installation
               </h3>
               <p className="text-gray-600 mb-4">
-                Installation complète d'adoucisseur d'eau adapté à vos besoins
+                Pose intégrale de votre système sur mesure, calibré pour votre foyer et votre consommation
               </p>
               <span className="text-primary-600 font-medium group-hover:underline">
                 En savoir plus →
@@ -324,7 +319,7 @@ export default function Home() {
                 Entretien
               </h3>
               <p className="text-gray-600 mb-4">
-                Maintenance régulière pour garantir le bon fonctionnement
+                Visites préventives planifiées pour optimiser les performances et prolonger la durabilité
               </p>
               <span className="text-primary-600 font-medium group-hover:underline">
                 En savoir plus →
@@ -339,7 +334,7 @@ export default function Home() {
                 Dépannage
               </h3>
               <p className="text-gray-600 mb-4">
-                Intervention rapide pour réparer votre adoucisseur
+                Diagnostics et réparations express en cas de panne ou dysfonctionnement
               </p>
               <span className="text-primary-600 font-medium group-hover:underline">
                 En savoir plus →
@@ -354,7 +349,7 @@ export default function Home() {
                 Devis gratuit
               </h3>
               <p className="text-gray-600 mb-4">
-                Obtenez un devis personnalisé sans engagement
+                Estimations détaillées et transparentes, adaptées à votre projet spécifique
               </p>
               <span className="text-primary-600 font-medium group-hover:underline">
                 En savoir plus →
@@ -368,10 +363,10 @@ export default function Home() {
       <Section className="py-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Nous intervenons dans toute la {departementConfig.departementName}
+            Présents partout en {departementConfig.departementName}
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg max-w-2xl mx-auto">
-            Installation et entretien d'adoucisseurs d'eau dans les principales villes de la {departementConfig.departementName}
+            Nos techniciens partenaires couvrent l'intégralité du département pour vos projets d'adoucissement
           </p>
           <CityList />
           <div className="text-center mt-8">

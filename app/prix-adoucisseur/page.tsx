@@ -29,9 +29,7 @@ export default function PrixPage() {
           Prix d'un adoucisseur d'eau en {departementConfig.departementName}
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl">
-          Le prix d'un adoucisseur d'eau varie selon plusieurs facteurs : la taille de votre
-          logement, le nombre de personnes, la dureté de l'eau et le modèle choisi. Découvrez
-          les tarifs moyens et obtenez un devis gratuit personnalisé pour votre projet en {departementConfig.departementName}.
+          L'investissement nécessaire pour équiper votre habitation dépend de multiples critères : superficie à traiter, composition du foyer, taux de minéralisation et gamme de l'appareil retenu. Explorez les fourchettes tarifaires habituelles et recevez une estimation chiffrée adaptée à votre situation en {departementConfig.departementName}.
         </p>
         <p className="text-base text-gray-600 max-w-3xl">
           Nous réalisons par exemple des{" "}
@@ -54,34 +52,29 @@ export default function PrixPage() {
         <div className="max-w-4xl mx-auto space-y-12">
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Prix d'achat d'un adoucisseur d'eau
+              Coût d'acquisition d'un système d'adoucissement
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Le prix d'un adoucisseur d'eau varie généralement entre <strong>1000€ et 2700€</strong> selon
-                plusieurs critères :
+                L'enveloppe budgétaire pour l'achat du matériel s'échelonne habituellement de <strong>1000€ à 2700€</strong>, en fonction de différents paramètres :
               </p>
               
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-4 text-gray-900">
-                  Facteurs influençant le prix
+                  Variables impactant le tarif
                 </h3>
                 <ul className="list-disc list-inside space-y-2">
                   <li>
-                    <strong>Capacité :</strong> Un adoucisseur pour 2-3 personnes coûte entre 1000€
-                    et 1400€, tandis qu'un modèle pour 4-6 personnes coûte entre 1400€ et 2200€
+                    <strong>Volume de traitement :</strong> Comptez 1000-1400€ pour un foyer de 2-3 occupants, 1400-2200€ pour 4-6 personnes
                   </li>
                   <li>
-                    <strong>Type d'adoucisseur :</strong> Les adoucisseurs à résine classiques sont
-                    généralement moins chers que les modèles au CO2
+                    <strong>Technologie employée :</strong> Les systèmes à permutation ionique restent plus accessibles que les dispositifs à injection CO2
                   </li>
                   <li>
-                    <strong>Niveau d'automatisation :</strong> Les modèles automatiques avec
-                    programmation avancée sont plus chers que les modèles manuels
+                    <strong>Degré d'automatisation :</strong> Les versions entièrement programmables coûtent davantage que les variantes à pilotage manuel
                   </li>
                   <li>
-                    <strong>Marque et qualité :</strong> Les grandes marques et les modèles
-                    haut de gamme sont plus onéreux mais offrent une meilleure durabilité
+                    <strong>Positionnement commercial :</strong> Les références premium de fabricants reconnus affichent un surcoût justifié par une fiabilité accrue
                   </li>
                 </ul>
               </div>
@@ -89,9 +82,7 @@ export default function PrixPage() {
               <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
                 <p className="font-semibold mb-2">💡 Conseil</p>
                 <p>
-                  Il est recommandé de ne pas choisir uniquement sur le prix. Un adoucisseur de
-                  qualité, bien dimensionné, vous fera économiser de l'argent sur le long terme
-                  grâce à une meilleure efficacité et une durée de vie plus longue.
+                  Privilégiez la performance et la pérennité plutôt que le seul critère tarifaire. Un équipement correctement calibré et robuste génère des économies substantielles par sa longévité et son rendement optimal.
                 </p>
               </div>
             </div>
@@ -99,25 +90,24 @@ export default function PrixPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Coût d'installation
+              Budget de mise en œuvre
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Le coût d'installation d'un adoucisseur d'eau varie généralement entre{" "}
-                <strong>400€ et 700€</strong>, selon la complexité de l'installation :
+                La main-d'œuvre pour l'installation représente typiquement{" "}
+                <strong>400 à 700€</strong>, modulée selon la configuration du chantier :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Raccordement à l'arrivée d'eau</li>
-                <li>Installation du bac à sel</li>
-                <li>Réglages et programmation</li>
-                <li>Mise en service et test</li>
-                <li>Éventuelles modifications de plomberie</li>
+                <li>Branchement sur l'alimentation générale</li>
+                <li>Positionnement du réservoir de saumure</li>
+                <li>Paramétrages initiaux et mise au point</li>
+                <li>Démarrage supervisé avec contrôle qualité</li>
+                <li>Adaptations hydrauliques si nécessaire</li>
               </ul>
               <p>
-                Certains installateurs proposent des forfaits "fourni et posé" qui incluent
-                l'appareil et l'installation, ce qui peut être plus avantageux. Pour en savoir plus, consultez notre page sur{" "}
+                De nombreux prestataires commercialisent des offres globales intégrant équipement et pose, souvent plus avantageuses financièrement. Détails complets sur notre rubrique{" "}
                 <Link href="/adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  l'installation d'adoucisseur d'eau en {departementConfig.departementName}
+                  installation d'adoucisseur en {departementConfig.departementName}
                 </Link>.
               </p>
             </div>
@@ -125,39 +115,39 @@ export default function PrixPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Coûts d'entretien et de fonctionnement
+              Dépenses d'exploitation annuelles
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                En plus du coût d'achat et d'installation, il faut prévoir des coûts récurrents :
+                Au-delà de l'investissement initial, anticipez les frais de fonctionnement réguliers :
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold mb-2 text-gray-900">Sel de régénération</h3>
+                  <h3 className="font-semibold mb-2 text-gray-900">Consommables régénérants</h3>
                   <p className="text-sm">
-                    Environ 250€ à 300€ par an selon la consommation et la dureté de l'eau
+                    Provision annuelle de 250 à 300€ variant avec l'usage et le TH initial
                   </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold mb-2 text-gray-900">Entretien annuel</h3>
+                  <h3 className="font-semibold mb-2 text-gray-900">Maintenance préventive</h3>
                   <p className="text-sm">
-                    Entre 300€ et 400€ par an pour un{" "}
+                    De 300 à 400€/an pour une{" "}
                     <Link href="/entretien-adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                      entretien professionnel
+                      révision technique complète
                     </Link>
                   </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold mb-2 text-gray-900">Consommation d'eau</h3>
+                  <h3 className="font-semibold mb-2 text-gray-900">Surconsommation hydraulique</h3>
                   <p className="text-sm">
-                    Légère augmentation due à la régénération (environ 5% de consommation en plus)
+                    Majoration modérée liée aux cycles de lavage (approximativement +5% sur la facture)
                   </p>
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-semibold mb-2 text-gray-900">Remplacement résine</h3>
+                  <h3 className="font-semibold mb-2 text-gray-900">Renouvellement du média</h3>
                   <p className="text-sm">
-                    Tous les 5-10 ans, environ 400€ à 600€ selon le modèle
+                    Changement quinquennal ou décennal, budget 400-600€ selon référence
                   </p>
                 </div>
               </div>
@@ -166,54 +156,47 @@ export default function PrixPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Aides et financement
+              Dispositifs d'aide et solutions de paiement
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Certaines aides peuvent être disponibles pour l'installation d'un adoucisseur
-                d'eau, notamment :
+                Plusieurs leviers peuvent alléger le poids financier de votre projet :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Crédit d'impôt :</strong> Vérifiez les conditions d'éligibilité selon
-                  votre situation
+                  <strong>Avantages fiscaux :</strong> Examinez votre éligibilité aux déductions ou crédits d'impôt selon votre profil
                 </li>
                 <li>
-                  <strong>Aides locales :</strong> Certaines communes ou départements proposent
-                  des aides pour l'amélioration de la qualité de l'eau
+                  <strong>Subventions territoriales :</strong> Collectivités locales et intercommunalités financent parfois l'amélioration qualitative de l'eau domestique
                 </li>
                 <li>
-                  <strong>Financement :</strong> Possibilité de financement avec paiement en
-                  plusieurs fois chez certains installateurs
+                  <strong>Facilités de règlement :</strong> Échelonnement du paiement proposé par de nombreux professionnels du secteur
                 </li>
               </ul>
               <p>
-                Renseignez-vous auprès de votre installateur ou de votre mairie pour connaître
-                les aides disponibles dans votre commune.
+                Interrogez votre artisan ou les services municipaux pour identifier les dispositifs applicables à votre localité.
               </p>
             </div>
           </section>
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Pourquoi demander un devis personnalisé ?
+              L'intérêt d'une estimation sur mesure
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Les prix indiqués sont des fourchettes moyennes. Le prix réel dépend de votre
-                situation spécifique :
+                Les montants communiqués constituent des ordres de grandeur. Le chiffrage précis découle de vos spécificités :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Dureté de l'eau dans votre commune</li>
-                <li>Nombre de personnes dans votre foyer</li>
-                <li>Consommation d'eau quotidienne</li>
-                <li>Espace disponible pour l'installation</li>
-                <li>Complexité de l'installation (plomberie existante)</li>
-                <li>Modèle et marque choisis</li>
+                <li>Minéralisation constatée sur votre secteur géographique</li>
+                <li>Composition de votre maisonnée</li>
+                <li>Volumes journaliers soutirés</li>
+                <li>Configuration spatiale et accessibilité technique</li>
+                <li>État et agencement de la plomberie existante</li>
+                <li>Gamme et fabricant sélectionnés</li>
               </ul>
               <p>
-                Un devis personnalisé vous permet d'obtenir un prix précis adapté à vos besoins
-                et à votre situation. C'est gratuit et sans engagement.
+                Une proposition commerciale individualisée garantit un tarif exact, calibré sur vos contraintes réelles. Démarche totalement gratuite et non contraignante.
               </p>
             </div>
           </section>

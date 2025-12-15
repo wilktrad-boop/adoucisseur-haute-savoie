@@ -163,7 +163,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
           required
           value={formData.ville}
           onChange={(e) => setFormData({ ...formData, ville: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900"
         >
           <option value="">Sélectionnez une ville</option>
           {villes.map((ville) => (
@@ -184,7 +184,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
           required
           value={formData.besoin}
           onChange={(e) => setFormData({ ...formData, besoin: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900"
         >
           <option value="installation">Installation d'un adoucisseur</option>
           <option value="entretien">Entretien d'un adoucisseur</option>

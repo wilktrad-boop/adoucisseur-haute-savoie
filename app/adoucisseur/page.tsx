@@ -48,7 +48,7 @@ export default function AdoucisseurPage() {
           Adoucisseur d'eau en {departementConfig.departementName}
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl">
-          Entre les rives du lac d'Annecy, le Genevois français et la vallée de l'Arve, l'eau de la {departementConfig.departementName} est naturellement calcaire. Un adoucisseur d'eau permet de réduire la dureté, protège vos équipements et améliore votre confort. Découvrez comment choisir le modèle adapté à votre logement.
+          Que vous résidiez près du Léman, dans les Aravis ou le bassin annécien, le calcaire présent dans les réseaux locaux menace vos installations. Comprendre le fonctionnement d'un système d'adoucissement vous aide à sélectionner l'équipement idéal pour votre habitation.
         </p>
       </Section>
 
@@ -56,26 +56,26 @@ export default function AdoucisseurPage() {
         <div className="max-w-4xl mx-auto space-y-12">
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Pourquoi installer un adoucisseur d'eau en {departementConfig.departementName} ?
+              Les raisons d'opter pour un traitement anti-calcaire en {departementConfig.departementName}
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                La dureté de l'eau varie selon les communes de la {departementConfig.departementName}, mais elle dépasse souvent 25°fH dans les zones du Chablais, de l'Albanais ou du Faucigny. Cette eau classée "dure" encrasse les installations domestiques.
+                Le titre hydrotimétrique fluctue entre communes, franchissant régulièrement le seuil de 25°fH sur les territoires du Chablais, de l'Albanais et du Faucigny. Ces niveaux élevés accélèrent l'entartrage de vos circuits hydrauliques.
               </p>
               <p>
-                Cette eau calcaire peut causer plusieurs problèmes :
+                Les conséquences d'une eau fortement minéralisée sont multiples :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Dépôts de calcaire dans les canalisations et les appareils</li>
-                <li>Usure prématurée des appareils électroménagers (lave-linge, lave-vaisselle, chauffe-eau)</li>
-                <li>Eau désagréable pour la peau et les cheveux</li>
-                <li>Consommation accrue de produits lessiviels et d'entretien</li>
-                <li>Coûts de réparation et de remplacement d'équipements</li>
+                <li>Formation de concrétions blanches obstruant tuyauteries et résistances</li>
+                <li>Vieillissement accéléré du lave-linge, lave-vaisselle et cumulus</li>
+                <li>Sensations de tiraillement cutané et cheveux rêches</li>
+                <li>Surconsommation de détergents et anticalcaires</li>
+                <li>Factures de dépannage et remplacements prématurés</li>
               </ul>
               <p>
-                Installer un adoucisseur d'eau en {departementConfig.departementName} permet de stabiliser la dureté autour de 8 à 12°fH et de préserver vos équipements, même avec une eau issue des réseaux de montagne. Pour maintenir votre installation en parfait état, découvrez notre{" "}
+                Équiper votre logement d'un dispositif d'adoucissement ramène le TH entre 8 et 12°fH, protégeant ainsi vos appareils quelle que soit l'origine montagnarde de votre eau. Un suivi régulier garantit cette protection sur le long terme – consultez nos{" "}
                 <Link href="/entretien-adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  service d'entretien d'adoucisseur en {departementConfig.departementName}
+                  prestations de maintenance en {departementConfig.departementName}
                 </Link>.
               </p>
               <p>
@@ -98,95 +98,82 @@ export default function AdoucisseurPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Comment fonctionne un adoucisseur d'eau ?
+              Principe de fonctionnement d'un système d'adoucissement
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Un adoucisseur d'eau fonctionne selon le principe de l'échange d'ions. L'eau
-                traverse une résine échangeuse d'ions chargée en sodium. Les ions calcium et
-                magnésium (responsables de la dureté) sont échangés contre des ions sodium,
-                adoucissant ainsi l'eau.
+                La technologie repose sur la permutation ionique : l'eau circule à travers une résine saturée en ions sodium. Les ions calcium et magnésium (à l'origine de la dureté) sont capturés et remplacés par du sodium, transformant ainsi une eau calcaire en eau douce.
               </p>
               <p>
-                Le processus se déroule en plusieurs étapes :
+                Le cycle opératoire comprend trois phases distinctes :
               </p>
               <ol className="list-decimal list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Adoucissement :</strong> L'eau dure traverse la résine, qui retient les
-                  ions calcium et magnésium.
+                  <strong>Phase de service :</strong> Le flux hydraulique traverse la colonne de résine qui piège calcium et magnésium.
                 </li>
                 <li>
-                  <strong>Régénération :</strong> Lorsque la résine est saturée, l'adoucisseur se
-                  régénère automatiquement en utilisant une solution de saumure (eau salée).
+                  <strong>Phase de régénération :</strong> Dès saturation de la résine, l'appareil déclenche automatiquement un lavage à la saumure (solution salée concentrée).
                 </li>
                 <li>
-                  <strong>Rinçage :</strong> L'eau de rinçage est évacuée, et l'adoucisseur est
-                  prêt pour un nouveau cycle.
+                  <strong>Phase de rinçage :</strong> Les eaux de lavage partent à l'égout, la résine retrouve sa capacité d'échange maximale.
                 </li>
               </ol>
               <p>
-                La régénération se fait généralement la nuit, lorsque la consommation d'eau est
-                faible, et dure environ 1 à 2 heures.
+                Ces régénérations s'effectuent typiquement durant les heures creuses nocturnes, sur une durée de 60 à 120 minutes selon les modèles.
               </p>
             </div>
           </section>
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Quel type d'adoucisseur choisir ?
+              Comparatif des technologies disponibles
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Il existe plusieurs types d'adoucisseurs d'eau, chacun adapté à des besoins
-                spécifiques :
+                Le marché propose différentes solutions techniques, chacune répondant à des contextes d'usage particuliers :
               </p>
               
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                  Adoucisseur à résine échangeuse d'ions
+                  Système à permutation ionique
                 </h3>
                 <p>
-                  C'est le type le plus courant. Il nécessite du sel pour la régénération et
-                  convient à la plupart des foyers. Il existe des modèles manuels, semi-automatiques
-                  et automatiques (recommandés).
+                  Solution la plus répandue, elle fonctionne avec du sel régénérant et s'adapte à la majorité des habitations. Les versions entièrement automatisées offrent le meilleur confort d'utilisation (programmation volumétrique ou temporelle).
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                  Adoucisseur au CO2
+                  Injection de CO2
                 </h3>
                 <p>
-                  Alternative écologique qui n'utilise pas de sel. Le CO2 transforme le calcaire
-                  en bicarbonate, qui reste soluble dans l'eau. Plus respectueux de
-                  l'environnement, mais généralement plus coûteux à l'achat.
+                  Procédé sans sel où le dioxyde de carbone dissout le calcaire en bicarbonate soluble. Empreinte écologique réduite, investissement initial généralement supérieur aux modèles à résine.
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                  Adoucisseur magnétique ou électronique
+                  Conditionneurs magnétiques ou électroniques
                 </h3>
                 <p>
-                  Ces systèmes modifient la structure du calcaire sans le supprimer. Moins efficace
-                  que les adoucisseurs à résine, ils conviennent pour des besoins moins importants.
+                  Appareils modifiant la cristallisation du calcaire sans élimination réelle. Efficacité limitée, adaptés uniquement aux situations de faible entartrage ou en complément d'autres traitements.
                 </p>
               </div>
 
               <p>
-                Pour choisir le bon adoucisseur, il est essentiel de prendre en compte :
+                Les critères de sélection déterminants incluent :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Le nombre de personnes dans le foyer</li>
-                <li>La consommation d'eau quotidienne</li>
-                <li>La dureté de l'eau dans votre commune</li>
-                <li>L'espace disponible pour l'installation</li>
-                <li>Votre budget</li>
+                <li>Composition du foyer et nombre d'occupants</li>
+                <li>Volume d'eau consommé journellement</li>
+                <li>Taux de calcaire mesuré localement</li>
+                <li>Contraintes d'encombrement et de raccordement</li>
+                <li>Enveloppe budgétaire allouée au projet</li>
               </ul>
               <p>
-                Pour connaître les tarifs détaillés, consultez notre page sur les{" "}
+                Retrouvez une grille tarifaire complète sur notre page dédiée aux{" "}
                 <Link href="/prix-adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  prix d'un adoucisseur d'eau en {departementConfig.departementName}
+                  coûts d'acquisition et de pose en {departementConfig.departementName}
                 </Link>.
               </p>
             </div>

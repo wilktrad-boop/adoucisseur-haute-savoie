@@ -92,10 +92,7 @@ export default async function VillePage({ params }: PageProps) {
             Installation et entretien d'adoucisseurs d'eau à {ville.nom}
           </h1>
           <p className="text-lg text-gray-700 max-w-3xl">
-            Vous habitez à {ville.nom} ({ville.codePostal}) et vous souhaitez installer ou entretenir
-            un adoucisseur d'eau ? Nous mettons en relation les habitants de {ville.nom} et de toute
-            la {departementConfig.departementName} avec des professionnels qualifiés pour l'installation, l'entretien et le
-            dépannage d'adoucisseurs d'eau.
+            Résidents de {ville.nom} ({ville.codePostal}), bénéficiez d'un service de mise en contact avec des experts certifiés du traitement de l'eau. Notre réseau couvre toute la {departementConfig.departementName} pour vos besoins en pose, maintenance et réparation de systèmes anti-calcaire.
           </p>
           {ville.zone && (
             <p className="text-gray-600 mt-2">
@@ -115,12 +112,11 @@ export default async function VillePage({ params }: PageProps) {
           {ville.quartiers && ville.quartiers.length > 0 && (
             <section>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Quartiers desservis à {ville.nom}
+                Zones d'intervention à {ville.nom}
               </h2>
               <div className="text-gray-700 space-y-4">
                 <p>
-                  Nous intervenons dans tous les quartiers de {ville.nom} pour l'installation et
-                  l'entretien d'adoucisseurs d'eau :
+                  Nos partenaires techniques opèrent sur l'ensemble des secteurs de {ville.nom} pour vos projets d'adoucissement :
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-4">
                   {ville.quartiers.map((quartier, index) => (
@@ -133,8 +129,7 @@ export default async function VillePage({ params }: PageProps) {
                   ))}
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
-                  Vous habitez dans un autre quartier ? Contactez-nous, nous intervenons dans toute
-                  la commune de {ville.nom}.
+                  Votre quartier ne figure pas dans cette liste ? Pas d'inquiétude, notre maillage couvre l'intégralité du territoire communal de {ville.nom}.
                 </p>
               </div>
             </section>
@@ -162,56 +157,49 @@ export default async function VillePage({ params }: PageProps) {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Pourquoi installer un adoucisseur à {ville.nom} ?
+              Avantages d'un système anti-calcaire à {ville.nom}
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                L'eau distribuée à {ville.nom} et dans la {departementConfig.departementName} présente souvent une dureté élevée,
-                ce qui peut causer plusieurs problèmes au quotidien :
+                La minéralisation importante constatée à {ville.nom} comme ailleurs en {departementConfig.departementName} génère divers désagréments domestiques :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Dépôts de calcaire dans vos canalisations et appareils électroménagers</li>
-                <li>Usure prématurée de vos équipements (lave-linge, lave-vaisselle, chauffe-eau)</li>
-                <li>Eau désagréable pour la peau et les cheveux</li>
-                <li>Consommation accrue de produits d'entretien et de lessive</li>
-                <li>Coûts de réparation et de remplacement d'équipements</li>
+                <li>Concrétions blanches obstruant progressivement tuyaux et résistances</li>
+                <li>Vieillissement accéléré du parc électroménager (machines, ballons thermodynamiques)</li>
+                <li>Inconfort cutané post-douche et cheveux ternes</li>
+                <li>Multiplication des doses de détergents pour compenser</li>
+                <li>Budgets de réparation et renouvellement alourdis</li>
               </ul>
               <p>
-                Installer un adoucisseur d'eau à {ville.nom} permet de réduire la dureté de l'eau
-                et de protéger votre installation tout en améliorant votre confort quotidien.
+                Équiper son logement à {ville.nom} d'un adoucisseur corrige efficacement ces désagréments tout en préservant vos installations sur la durée.
               </p>
             </div>
           </section>
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Nos services à {ville.nom}
+              Prestations disponibles à {ville.nom}
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Nous proposons une gamme complète de services pour votre adoucisseur d'eau à{" "}
+                Notre panel de services répond à l'ensemble de vos attentes en matière de traitement de l'eau à{" "}
                 {ville.nom} :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Installation d'adoucisseur :</strong> Installation complète d'un
-                  adoucisseur adapté à vos besoins et à votre logement
+                  <strong>Mise en place d'équipement :</strong> Pose intégrale d'un dispositif calibré selon vos usages domestiques
                 </li>
                 <li>
-                  <strong>Entretien régulier :</strong> Maintenance et vérification de votre
-                  adoucisseur pour garantir son bon fonctionnement
+                  <strong>Suivi préventif :</strong> Révisions périodiques assurant la pérennité et l'efficacité de votre appareil
                 </li>
                 <li>
-                  <strong>Dépannage et réparation :</strong> Intervention rapide en cas de panne
-                  ou de dysfonctionnement
+                  <strong>Interventions curatives :</strong> Diagnostic et remise en état rapides lors de dysfonctionnements
                 </li>
                 <li>
-                  <strong>Remplacement :</strong> Remplacement d'un ancien adoucisseur par un
-                  modèle plus performant
+                  <strong>Renouvellement de matériel :</strong> Substitution d'installations obsolètes par des modèles récents et performants
                 </li>
                 <li>
-                  <strong>Conseil et diagnostic :</strong> Analyse de votre eau et conseils
-                  personnalisés pour choisir la meilleure solution
+                  <strong>Expertise technique :</strong> Analyse qualitative de votre eau et orientation vers la solution optimale
                 </li>
               </ul>
             </div>
@@ -219,19 +207,18 @@ export default async function VillePage({ params }: PageProps) {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Intervention rapide à {ville.nom}
+              Réactivité de nos partenaires à {ville.nom}
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Nos professionnels partenaires interviennent rapidement à {ville.nom} et dans
-                toute la {departementConfig.departementName} pour répondre à vos besoins :
+                Le réseau de techniciens avec qui nous collaborons garantit une prise en charge efficace à {ville.nom} et sur l'ensemble du département :
               </p>
               <div className="bg-primary-50 p-6 rounded-lg">
                 <ul className="list-disc list-inside space-y-2">
-                  <li>Devis gratuit et personnalisé sous 24-48h</li>
-                  <li>Installation planifiée selon vos disponibilités</li>
-                  <li>Intervention d'urgence disponible pour les pannes critiques</li>
-                  <li>Service client disponible pour répondre à vos questions</li>
+                  <li>Chiffrage sur mesure et sans frais sous 24-48h maximum</li>
+                  <li>Rendez-vous d'installation coordonné avec votre agenda</li>
+                  <li>Dépannage express mobilisable pour les situations d'urgence</li>
+                  <li>Assistance téléphonique pour tout renseignement complémentaire</li>
                 </ul>
               </div>
             </div>

@@ -48,9 +48,7 @@ export default function EntretienPage() {
           Entretien d'adoucisseur d'eau en {departementConfig.departementName}
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl">
-          Un entretien régulier est essentiel pour garantir le bon fonctionnement et la durée de
-          vie de votre adoucisseur d'eau. Découvrez pourquoi l'entretien est important, à quelle
-          fréquence le réaliser, et comment notre service professionnel accompagne les foyers de la{" "}
+          La longévité et l'efficacité de votre installation dépendent directement de la qualité du suivi technique. Apprenez quand planifier les interventions, quels signaux surveiller, et comment nos professionnels assurent la pérennité de votre équipement dans toute la{" "}
           {departementConfig.departementName}.
         </p>
       </Section>
@@ -59,77 +57,63 @@ export default function EntretienPage() {
         <div className="max-w-4xl mx-auto space-y-12">
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              À quelle fréquence faire entretenir son adoucisseur ?
+              Rythme optimal des visites de maintenance
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                La fréquence d'entretien d'un adoucisseur d'eau dépend de plusieurs facteurs :
-                la dureté de l'eau, la consommation, et le modèle de l'appareil. En général, il
-                est recommandé de faire entretenir votre adoucisseur :
+                La périodicité des interventions varie selon le niveau de minéralisation locale, le volume traité et les caractéristiques du matériel. Voici les recommandations standards :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>
-                  <strong>Une fois par an minimum</strong> pour une vérification générale et un
-                  nettoyage complet
+                  <strong>Contrôle annuel obligatoire</strong> incluant inspection complète et désinfection de la résine
                 </li>
                 <li>
-                  <strong>Tous les 6 mois</strong> si vous avez une eau très dure (supérieure à
-                  25°fH) ou une consommation importante
+                  <strong>Révision semestrielle</strong> conseillée pour les eaux dépassant 25°fH ou les usages intensifs
                 </li>
                 <li>
-                  <strong>Immédiatement</strong> en cas de signe de dysfonctionnement ou de baisse
-                  de performance
+                  <strong>Intervention immédiate</strong> dès constatation d'anomalies ou chute de rendement
                 </li>
               </ul>
               <p>
-                En plus de l'entretien professionnel, vous devez vérifier régulièrement le niveau
-                de sel dans le bac à sel et le recharger si nécessaire. La fréquence de recharge
-                dépend de votre consommation et de la dureté de l'eau.
+                Parallèlement aux passages techniques, surveillez personnellement la jauge de sel et réapprovisionnez le réservoir dès que nécessaire. La cadence de rechargement dépend de vos usages et du TH mesuré à votre robinet.
               </p>
             </div>
           </section>
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Les signes qui montrent qu'un entretien est nécessaire
+              Symptômes révélateurs d'un besoin de révision
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Plusieurs signes peuvent indiquer que votre adoucisseur nécessite un entretien ou
-                une intervention :
+                Certains indices témoignent d'un dysfonctionnement ou d'une maintenance trop espacée :
               </p>
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
                 <ul className="list-disc list-inside space-y-2">
                   <li>
-                    <strong>Eau moins douce qu'à l'habitude :</strong> Vous remarquez des dépôts
-                    de calcaire ou une sensation différente de l'eau
+                    <strong>Retour du calcaire :</strong> Réapparition de traces blanches, sensation de peau sèche après la douche
                   </li>
                   <li>
-                    <strong>Consommation de sel anormale :</strong> Le sel se consomme plus
-                    rapidement que d'habitude
+                    <strong>Épuisement accéléré du sel :</strong> Le niveau baisse anormalement vite entre deux rechargements
                   </li>
                   <li>
-                    <strong>Bruit inhabituel :</strong> L'adoucisseur fait des bruits étranges
-                    lors de la régénération
+                    <strong>Nuisances sonores :</strong> Claquements, sifflements ou vibrations pendant les cycles de lavage
                   </li>
                   <li>
-                    <strong>Eau trouble ou goût étrange :</strong> L'eau adoucie présente un
-                    aspect ou un goût inhabituel
+                    <strong>Qualité organoleptique altérée :</strong> Eau trouble, coloration ou saveur désagréable
                   </li>
                   <li>
-                    <strong>Régénération qui ne fonctionne plus :</strong> L'appareil ne se
-                    régénère plus automatiquement
+                    <strong>Absence de régénération :</strong> Le cycle de nettoyage automatique ne se déclenche plus
                   </li>
                   <li>
-                    <strong>Fuite d'eau :</strong> Présence d'eau autour de l'adoucisseur
+                    <strong>Suintements ou écoulements :</strong> Humidité persistante autour du socle ou des raccords
                   </li>
                 </ul>
               </div>
               <p>
-                Si vous observez l'un de ces signes, il est recommandé de faire appel à un
-                professionnel pour un diagnostic et un entretien. Si votre appareil ne fonctionne plus correctement, découvrez aussi notre{" "}
+                Face à l'un de ces symptômes, contactez rapidement un spécialiste pour établir un diagnostic précis. Pour les pannes avérées nécessitant une réparation, consultez nos{" "}
                 <Link href="/depannage-adoucisseur" className="text-primary-600 hover:text-primary-700 font-medium underline">
-                  service de dépannage d'adoucisseur en {departementConfig.departementName}
+                  prestations de dépannage rapide en {departementConfig.departementName}
                 </Link>.
               </p>
             </div>
@@ -137,63 +121,56 @@ export default function EntretienPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Entretien d'adoucisseur en {departementConfig.departementName} : comment ça se passe ?
+              Déroulement d'une révision technique en {departementConfig.departementName}
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Un entretien professionnel d'adoucisseur comprend plusieurs étapes essentielles :
+                Chaque intervention de maintenance suit un protocole rigoureux en plusieurs phases :
               </p>
               
               <div className="space-y-4">
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    1. Vérification du niveau de sel
+                    1. Inspection du réservoir de saumure
                   </h3>
                   <p>
-                    Le professionnel vérifie le niveau de sel dans le bac et s'assure que la
-                    qualité du sel est adaptée. Il peut également nettoyer le bac à sel si
-                    nécessaire.
+                    Contrôle du stock restant, évaluation de la pureté du produit utilisé, détartrage du récipient si encrassement détecté.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    2. Nettoyage et vérification de la résine
+                    2. Examen de la colonne de résine
                   </h3>
                   <p>
-                    La résine échangeuse d'ions est vérifiée pour s'assurer qu'elle fonctionne
-                    correctement. Un nettoyage peut être effectué si nécessaire. La résine doit
-                    être remplacée tous les 5 à 10 ans selon l'utilisation.
+                    Test de performance du média échangeur, désinfection au besoin. Remplacement obligatoire après 5 à 10 années de service selon l'intensité d'utilisation.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    3. Contrôle de la programmation
+                    3. Ajustement des paramètres
                   </h3>
                   <p>
-                    Le professionnel vérifie que la programmation de la régénération est correcte
-                    et adaptée à votre consommation. Les réglages peuvent être ajustés si nécessaire.
+                    Vérification et optimisation de la programmation horaire ou volumétrique pour garantir une régénération adaptée à vos besoins réels.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    4. Test de la dureté de l'eau
+                    4. Mesure du titre hydrotimétrique
                   </h3>
                   <p>
-                    Un test de dureté est effectué pour vérifier que l'adoucisseur fonctionne
-                    correctement et que l'eau est bien adoucie.
+                    Analyse comparative eau brute/eau traitée confirmant l'efficacité du système et la conformité aux objectifs de douceur.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                    5. Vérification générale
+                    5. Contrôle d'étanchéité global
                   </h3>
                   <p>
-                    Le professionnel vérifie l'ensemble de l'installation : raccordements, fuites
-                    éventuelles, état général de l'appareil.
+                    Inspection minutieuse des joints, vannes et tuyauteries pour prévenir tout risque de fuite ou infiltration.
                   </p>
                 </div>
               </div>
@@ -202,24 +179,21 @@ export default function EntretienPage() {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Contrat d'entretien : une solution pratique
+              Formules d'abonnement pour une tranquillité totale
             </h2>
             <div className="text-gray-700 space-y-4">
               <p>
-                Pour garantir un entretien régulier et éviter les oublis, vous pouvez souscrire à
-                un contrat d'entretien. Ce contrat comprend généralement :
+                Souscrire à un forfait annuel sécurise le bon entretien de votre installation sans démarches répétées. Les prestations habituellement incluses :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Interventions d'entretien programmées (1 à 2 fois par an)</li>
-                <li>Vérification et nettoyage complet</li>
-                <li>Recharge de sel si nécessaire</li>
-                <li>Intervention d'urgence en cas de problème</li>
-                <li>Conseils et suivi personnalisé</li>
+                <li>Visites planifiées automatiquement (une à deux par an selon formule)</li>
+                <li>Révision complète avec désinfection</li>
+                <li>Fourniture du sel régénérant en option</li>
+                <li>Dépannage prioritaire en cas d'urgence</li>
+                <li>Accompagnement personnalisé et historique technique</li>
               </ul>
               <p>
-                Un contrat d'entretien vous permet de bénéficier d'un suivi régulier et de
-                préserver la durée de vie de votre adoucisseur tout en évitant les pannes
-                coûteuses.
+                Ces formules préventives maximisent la longévité de votre matériel et minimisent les risques de pannes onéreuses.
               </p>
               <p>
                 Nous assurons notamment l'
