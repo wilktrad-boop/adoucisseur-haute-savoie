@@ -104,7 +104,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
             required
             value={formData.nom}
             onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
           />
         </div>
 
@@ -118,7 +118,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
             required
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
           />
         </div>
       </div>
@@ -134,7 +134,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
             required
             value={formData.telephone}
             onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
             placeholder="06 12 34 56 78"
           />
         </div>
@@ -148,7 +148,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
             id="codePostal"
             value={formData.codePostal}
             onChange={(e) => setFormData({ ...formData, codePostal: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
             placeholder="74000"
           />
         </div>
@@ -163,7 +163,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
           required
           value={formData.ville}
           onChange={(e) => setFormData({ ...formData, ville: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
         >
           <option value="">Sélectionnez une ville</option>
           {villes.map((ville) => (
@@ -184,7 +184,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
           required
           value={formData.besoin}
           onChange={(e) => setFormData({ ...formData, besoin: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
         >
           <option value="installation">Installation d'un adoucisseur</option>
           <option value="entretien">Entretien d'un adoucisseur</option>
@@ -203,7 +203,7 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
           rows={4}
           value={formData.message}
           onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
           placeholder="Décrivez votre besoin ou posez vos questions..."
         />
       </div>
