@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     url: siteConfig.domain,
     images: [
       {
-        url: `${siteConfig.domain}/technicien_hero.png`,
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} - Intervention adoucisseur en ${departementConfig.departementName}`,
+        alt: `${siteConfig.name} - Installation adoucisseur en ${departementConfig.departementName}`,
       },
     ],
   },
@@ -51,8 +51,8 @@ export default function Home() {
         {/* Image de fond optimisée */}
         <div className="absolute inset-0">
           <Image
-            src="/technicien_hero.png"
-            alt={`Technicien installant un adoucisseur d'eau en ${departementConfig.departementName}`}
+            src="/Installation d'un adoucisseur d'eau_hero.webp"
+            alt={`Installation d'un adoucisseur d'eau en ${departementConfig.departementName}`}
             fill
             priority
             className="object-cover"

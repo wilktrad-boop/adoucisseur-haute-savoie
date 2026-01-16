@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: `${siteConfig.domain}/technicien_hero.png`,
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} - Installation et entretien d'adoucisseurs d'eau`,
