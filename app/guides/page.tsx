@@ -17,6 +17,20 @@ export const metadata: Metadata = {
     description:
       "Guides pratiques et conseils sur l'adoucisseur d'eau : choix, entretien, économies.",
     url: `${siteConfig.domain}/guides`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Guides et conseils sur l'adoucisseur d'eau",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Guides et conseils sur l'adoucisseur d'eau",
+    description: "Guides pratiques et conseils sur l'adoucisseur d'eau : choix, entretien, économies.",
   },
 };
 

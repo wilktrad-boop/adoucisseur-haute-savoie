@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     description:
       `Liste des villes desservies pour l'installation et l'entretien d'adoucisseurs d'eau en ${departementConfig.departementName}.`,
     url: `${siteConfig.domain}/villes`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: `Villes desservies en ${departementConfig.departementName}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Villes desservies en ${departementConfig.departementName} - Installation adoucisseur d'eau`,
+    description: `Liste des villes desservies pour l'installation et l'entretien d'adoucisseurs d'eau en ${departementConfig.departementName}.`,
   },
 };
 

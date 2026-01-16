@@ -16,6 +16,20 @@ export const metadata: Metadata = {
     description:
       `Contactez-nous pour un devis gratuit d'adoucisseur d'eau en ${departementConfig.departementName}.`,
     url: `${siteConfig.domain}/contact`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: `Contact - Devis gratuit adoucisseur d'eau en ${departementConfig.departementName}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact - Devis gratuit adoucisseur d'eau en ${departementConfig.departementName}`,
+    description: `Contactez-nous pour un devis gratuit d'adoucisseur d'eau en ${departementConfig.departementName}.`,
   },
 };
 

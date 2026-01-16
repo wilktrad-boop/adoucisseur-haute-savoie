@@ -19,6 +19,20 @@ export const metadata: Metadata = {
     description:
       `Entretien régulier de votre adoucisseur d'eau en ${departementConfig.departementName}. Service professionnel disponible.`,
     url: `${siteConfig.domain}/entretien-adoucisseur`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: `Entretien d'adoucisseur d'eau en ${departementConfig.departementName}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Entretien d'adoucisseur d'eau en ${departementConfig.departementName} - Maintenance`,
+    description: `Entretien régulier de votre adoucisseur d'eau en ${departementConfig.departementName}.`,
   },
 };
 

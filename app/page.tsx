@@ -22,6 +22,9 @@ export const metadata: Metadata = {
     description:
       `Spécialiste de l'installation, l'entretien et le dépannage d'adoucisseurs d'eau en ${departementConfig.departementName}. Devis gratuit.`,
     url: siteConfig.domain,
+    type: "website",
+    locale: "fr_FR",
+    siteName: siteConfig.name,
     images: [
       {
         url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
@@ -30,6 +33,11 @@ export const metadata: Metadata = {
         alt: `${siteConfig.name} - Installation adoucisseur en ${departementConfig.departementName}`,
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Adoucisseur d'eau en ${departementConfig.departementName} (${departementConfig.departementNumber}) – Installation, entretien et dépannage`,
+    description: `Spécialiste de l'installation, l'entretien et le dépannage d'adoucisseurs d'eau en ${departementConfig.departementName}. Devis gratuit.`,
   },
 };
 

@@ -40,6 +40,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       url: `${siteConfig.domain}/villes/${slug}`,
+      type: "website",
+      images: ville.image
+        ? [
+            {
+              url: `${siteConfig.domain}${ville.image}`,
+              width: 1200,
+              height: 630,
+              alt: `Installation d'adoucisseur d'eau à ${ville.nom}`,
+            },
+          ]
+        : [
+            {
+              url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+              width: 1200,
+              height: 630,
+              alt: `Installation d'adoucisseur d'eau à ${ville.nom}`,
+            },
+          ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }

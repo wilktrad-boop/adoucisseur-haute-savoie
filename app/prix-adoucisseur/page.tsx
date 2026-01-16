@@ -18,6 +18,20 @@ export const metadata: Metadata = {
     description:
       `Tarifs et prix d'un adoucisseur d'eau en ${departementConfig.departementName}. Devis gratuit et personnalisé.`,
     url: `${siteConfig.domain}/prix-adoucisseur`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: `Prix d'un adoucisseur d'eau en ${departementConfig.departementName}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Prix d'un adoucisseur d'eau en ${departementConfig.departementName} - Devis gratuit`,
+    description: `Tarifs et prix d'un adoucisseur d'eau en ${departementConfig.departementName}.`,
   },
 };
 
