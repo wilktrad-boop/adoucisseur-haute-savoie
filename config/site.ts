@@ -31,7 +31,7 @@ export const villes: Ville[] = [
     nom: "Annecy",
     codePostal: "74000",
     zone: "Lac d'Annecy",
-    image: "/Canal d'Annecy et Palais de l'Isle.png",
+    image: "/Villes/annecy.png",
     metaDescription:
       "Installation et entretien d'adoucisseurs d'eau à Annecy. Devis gratuit pour votre adoucisseur d'eau en Haute-Savoie.",
     quartiers: [
