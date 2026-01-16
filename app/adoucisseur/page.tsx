@@ -19,6 +19,20 @@ export const metadata: Metadata = {
     description:
       `Tout savoir sur l'adoucisseur d'eau en ${departementConfig.departementName} : fonctionnement, types d'adoucisseurs, avantages.`,
     url: `${siteConfig.domain}/adoucisseur`,
+    type: "website",
+    images: [
+      {
+        url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
+        width: 1200,
+        height: 630,
+        alt: `Installation d'adoucisseur d'eau en ${departementConfig.departementName}`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Adoucisseur d'eau en ${departementConfig.departementName} - Installation et conseils`,
+    description: `Tout savoir sur l'adoucisseur d'eau en ${departementConfig.departementName}.`,
   },
 };
 
