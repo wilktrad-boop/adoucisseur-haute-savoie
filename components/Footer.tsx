@@ -80,7 +80,73 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h3 className="text-white text-lg font-semibold mb-4">Nos partenaires</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a 
+                    href="https://valence-adoucisseur.fr/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Adoucisseur Valence
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.adoucisseur-isere.fr/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Adoucisseur Isère
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.adoucisseur-ain.fr/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Adoucisseur Ain
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-white text-lg font-semibold mb-4">Ils parlent de nous</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a 
+                    href="https://adoucisseur-france.blogspot.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Adoucisseur France Blog
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.travauxpro360.com/comment-choisir-le-bon-adoucisseur-deau-pour-votre-maison-a-valence/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Travaux Pro 360
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 pt-8 text-center text-sm">
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. Tous droits réservés.
           </p>
