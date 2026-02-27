@@ -49,10 +49,21 @@ const homepageSchema = {
   description: siteConfig.description,
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqHome.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+
 export default function Home() {
   return (
     <>
       <JsonLd data={homepageSchema} />
+      <JsonLd data={faqSchema} />
 
       {/* Hero Section */}
       <Section className="relative text-white py-16 md:py-24 overflow-hidden">

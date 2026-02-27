@@ -4,6 +4,7 @@ import Link from "next/link";
 import Section from "@/components/Section";
 import LeadForm from "@/components/LeadForm";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
 import { siteConfig, getVilleBySlug, villes } from "@/config/site";
 import { departementConfig } from "@/config/departement";
 
@@ -75,25 +76,46 @@ export default async function VillePage({ params }: PageProps) {
     notFound();
   }
 
-  const serviceSchema = {
+  const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Installation d'adoucisseur d'eau",
-    provider: {
-      "@type": "HomeAndConstructionBusiness",
-      name: siteConfig.name,
-    },
+    "@type": "LocalBusiness",
+    name: siteConfig.name,
+    url: `${siteConfig.domain}/villes/${slug}`,
+    telephone: siteConfig.contact.phone,
+    email: siteConfig.contact.email,
+    priceRange: "€€",
+    openingHours: "Mo-Sa 08:00-19:00",
     areaServed: {
       "@type": "City",
       name: ville.nom,
       postalCode: ville.codePostal,
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: departementConfig.departementName,
+      },
     },
-    description: `Installation et entretien d'adoucisseurs d'eau à ${ville.nom}, ${departementConfig.departementName}.`,
+    address: {
+      "@type": "PostalAddress",
+      postalCode: ville.codePostal,
+      addressLocality: ville.nom,
+      addressRegion: departementConfig.departementName,
+      addressCountry: "FR",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Services adoucisseur d'eau",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Installation d'adoucisseur d'eau" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Entretien d'adoucisseur d'eau" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dépannage d'adoucisseur d'eau" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Devis adoucisseur d'eau" } },
+      ],
+    },
   };
 
   return (
     <>
-      <JsonLd data={serviceSchema} />
+      <JsonLd data={localBusinessSchema} />
 
       <Section className="relative bg-gradient-to-br from-primary-50 to-white py-12 overflow-hidden">
         {/* Image de fond avec opacité */}
@@ -111,6 +133,7 @@ export default async function VillePage({ params }: PageProps) {
 
         {/* Contenu au-dessus du fond */}
         <div className="relative z-10">
+          <Breadcrumb items={[{ label: "Villes", href: "/villes" }, { label: ville.nom }]} />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Installation et entretien d'adoucisseurs d'eau à {ville.nom}
           </h1>
@@ -201,30 +224,30 @@ export default async function VillePage({ params }: PageProps) {
 
           <section>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Prestations disponibles à {ville.nom}
+              Nos services à {ville.nom}
             </h2>
-            <div className="text-gray-700 space-y-4">
-              <p>
-                Notre panel de services répond à l'ensemble de vos attentes en matière de traitement de l'eau à{" "}
-                {ville.nom} :
-              </p>
-              <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>
-                  <strong>Mise en place d'équipement :</strong> Pose intégrale d'un dispositif calibré selon vos usages domestiques
-                </li>
-                <li>
-                  <strong>Suivi préventif :</strong> Révisions périodiques assurant la pérennité et l'efficacité de votre appareil
-                </li>
-                <li>
-                  <strong>Interventions curatives :</strong> Diagnostic et remise en état rapides lors de dysfonctionnements
-                </li>
-                <li>
-                  <strong>Renouvellement de matériel :</strong> Substitution d'installations obsolètes par des modèles récents et performants
-                </li>
-                <li>
-                  <strong>Expertise technique :</strong> Analyse qualitative de votre eau et orientation vers la solution optimale
-                </li>
-              </ul>
+            <p className="text-gray-700 mb-6">
+              Notre réseau intervient à {ville.nom} pour l'ensemble de vos besoins en traitement de l'eau :
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                { href: "/adoucisseur", icon: "💧", title: "Installation", desc: "Pose complète d'un adoucisseur calibré pour votre foyer" },
+                { href: "/entretien-adoucisseur", icon: "🔧", title: "Entretien", desc: "Révisions périodiques pour garantir la pérennité de votre appareil" },
+                { href: "/depannage-adoucisseur", icon: "⚡", title: "Dépannage", desc: "Diagnostic et remise en état rapides en cas de dysfonctionnement" },
+                { href: "/prix-adoucisseur", icon: "📋", title: "Devis gratuit", desc: "Estimation personnalisée pour votre projet à " + ville.nom },
+              ].map((service) => (
+                <Link
+                  key={service.href}
+                  href={service.href}
+                  className="group flex gap-4 p-4 bg-white rounded-xl border border-gray-200 hover:border-primary-400 hover:shadow-md transition"
+                >
+                  <span className="text-2xl shrink-0">{service.icon}</span>
+                  <div>
+                    <p className="font-semibold text-gray-900 group-hover:text-primary-600 transition">{service.title}</p>
+                    <p className="text-sm text-gray-600">{service.desc}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
           </section>
 
