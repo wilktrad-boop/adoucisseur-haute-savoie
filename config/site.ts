@@ -101,20 +101,41 @@ export const villes: Ville[] = [
     codePostal: "74100",
     zone: "Genevois français",
     metaDescription:
-      "Installation d'adoucisseurs d'eau à Annemasse. Service d'entretien et dépannage en Haute-Savoie.",
+      "Adoucisseur d'eau à Annemasse (74100) — eau très dure 28-36 TH dans le Genevois français. Installation, entretien et dépannage. Devis gratuit sous 24h.",
     quartiers: [
       "Centre-ville",
       "Le Perrier",
       "Romagny",
       "Livron",
       "Château-Rouge",
+      "Gaillard",
+      "Vétraz-Monthoux",
     ],
     caracteristiquesEau:
-      "Le Genevois français est alimenté par plusieurs captages avec une eau calcaire nécessitant un traitement adapté.",
+      "Annemasse et le Genevois français présentent une eau parmi les plus calcaires de Haute-Savoie, avec une dureté de 28 à 36 TH. Cette eau provient de captages souterrains dans les nappes alluviales de l'Arve et de sources karstiques du Salève, naturellement chargées en calcium et magnésium. La densité urbaine de l'agglomération — immeubles collectifs, résidences récentes — amplifie les conséquences : les chauffe-eaux collectifs et les ballons individuels s'entartrent rapidement, les robinetteries se dégradent prématurément et les machines à laver affichent une durée de vie réduite. À 28-36 TH, un adoucisseur devient un investissement rentable en moins de 3 ans grâce aux économies sur les produits lessiviels et l'entretien électroménager.",
     dureteEau: "28-36 TH",
     referencesLocales: [
-      "Interventions dans les immeubles proches de la gare",
-      "Dépannage pour les maisons de Vétraz-Monthoux",
+      "Installations dans les immeubles collectifs proches de la gare d'Annemasse",
+      "Dépannage et remplacement de résines pour des maisons à Vétraz-Monthoux",
+      "Contrats d'entretien pour des copropriétés à Gaillard",
+      "Pose d'adoucisseurs dans des appartements récents au Perrier",
+    ],
+    faq: [
+      {
+        question: "Pourquoi l'eau est-elle si calcaire à Annemasse ?",
+        answer:
+          "L'eau distribuée à Annemasse provient principalement des nappes alluviales de l'Arve et de captages karstiques au pied du Salève. Ces formations géologiques chargent naturellement l'eau en calcium et magnésium, ce qui explique une dureté de 28 à 36 TH — parmi les plus élevées de Haute-Savoie. À titre de comparaison, l'eau est considérée dure à partir de 15 TH.",
+      },
+      {
+        question: "Peut-on installer un adoucisseur dans un appartement à Annemasse ?",
+        answer:
+          "Oui, tout à fait. L'installation en appartement est possible dès lors qu'il y a un accès à l'arrivée d'eau générale du logement (souvent sous l'évier ou dans un placard technique). Nos techniciens sont habitués aux installations en milieu urbain dense dans le Genevois français. Dans certaines copropriétés, une installation centralisée sur la colonne montante peut être envisagée avec l'accord du syndic.",
+      },
+      {
+        question: "Intervenez-vous à Gaillard et Vétraz-Monthoux ?",
+        answer:
+          "Oui, nous couvrons l'ensemble de l'agglomération d'Annemasse : Gaillard, Vétraz-Monthoux, Ambilly, Ville-la-Grand et les communes limitrophes. La dureté de l'eau est similaire sur tout le Genevois français (28-36 TH), ce qui rend l'adoucisseur particulièrement pertinent dans tout ce secteur.",
+      },
     ],
   },
   {
