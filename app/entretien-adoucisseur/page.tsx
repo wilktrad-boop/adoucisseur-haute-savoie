@@ -228,6 +228,44 @@ export default function EntretienPage() {
           </section>
 
           <section>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Entretien adoucisseur en Haute-Savoie : où intervenons-nous ?
+            </h2>
+            <div className="text-gray-700 space-y-4">
+              <p>
+                Nous assurons l'entretien d'adoucisseurs d'eau dans tout le département de la
+                Haute-Savoie. La dureté de l'eau varie selon les communes, ce qui influe sur la
+                fréquence des révisions recommandées :
+              </p>
+              <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-4">
+                {[
+                  { href: "/villes/annecy", label: "Annecy (74000)", detail: "eau dure 20-30 TH" },
+                  { href: "/villes/thonon-les-bains", label: "Thonon-les-Bains (74200)", detail: "eau dure 25-35 TH" },
+                  { href: "/villes/annemasse", label: "Annemasse (74100)", detail: "eau très dure 28-36 TH" },
+                  { href: "/villes/cluses", label: "Cluses (74300)", detail: "eau très dure 30-40 TH" },
+                  { href: "/villes/sallanches", label: "Sallanches (74700)", detail: "eau dure 22-32 TH" },
+                  { href: "/villes/bonneville", label: "Bonneville (74130)", detail: "eau très dure 28-38 TH" },
+                  { href: "/villes/rumilly", label: "Rumilly (74150)", detail: "eau très dure 30-40 TH" },
+                  { href: "/villes/chamonix", label: "Chamonix (74400)", detail: "eau modérée 18-28 TH" },
+                  { href: "/villes/la-roche-sur-foron", label: "La Roche-sur-Foron (74800)", detail: "eau dure 26-34 TH" },
+                ].map((ville) => (
+                  <li key={ville.href} className="bg-gray-50 rounded-lg p-3">
+                    <Link href={ville.href} className="text-primary-600 hover:text-primary-700 font-medium underline block">
+                      {ville.label}
+                    </Link>
+                    <span className="text-sm text-gray-500">{ville.detail}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4">
+                Plus l'eau est dure, plus l'adoucisseur travaille intensément et doit être révisé
+                fréquemment. Un entretien adapté à la minéralisation locale prolonge la durée de
+                vie de votre appareil.
+              </p>
+            </div>
+          </section>
+
+          <section>
             <RelatedServices currentService="entretien-adoucisseur" />
           </section>
         </div>
