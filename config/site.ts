@@ -211,20 +211,40 @@ export const villes: Ville[] = [
     codePostal: "74400",
     zone: "Mont-Blanc",
     metaDescription:
-      "Installation et entretien d'adoucisseurs d'eau à Chamonix-Mont-Blanc. Solutions adaptées aux résidences secondaires.",
+      "Adoucisseur d'eau à Chamonix-Mont-Blanc (74400) — spécialiste chalets et résidences secondaires. Eau 18-28 TH malgré les glaciers. Devis gratuit sous 24h.",
     quartiers: [
       "Centre-ville",
       "Les Praz",
       "Argentière",
       "Les Houches",
       "Servoz",
+      "Les Bossons",
     ],
     caracteristiquesEau:
-      "Malgré une eau issue des glaciers, les réseaux urbains présentent une minéralité élevée lors du stockage.",
+      "Contrairement aux idées reçues, l'eau du robinet à Chamonix n'est pas exempte de calcaire. Si une partie de l'alimentation provient effectivement de la fonte glaciaire, le réseau de distribution traverse des couches rocheuses calcaires et des réservoirs qui élèvent la minéralisation. La dureté mesurée oscille entre 18 et 28 TH selon les secteurs — Les Houches et Servoz affichent des valeurs plus élevées que le centre-ville. Pour les résidences secondaires laissées inoccupées plusieurs mois, le tartre se concentre dans les canalisations et les chauffe-eaux pendant les périodes sans circulation d'eau, aggravant l'encrassement au retour.",
     dureteEau: "18-28 TH",
     referencesLocales: [
-      "Installations pour les chalets touristiques",
-      "Entretien régulier pour les résidences secondaires",
+      "Installations pour les chalets touristiques en saison",
+      "Contrats d'entretien pour des résidences secondaires à Argentière",
+      "Dépannages express avant saison de ski pour des propriétaires absents",
+      "Pose d'adoucisseurs pour des copropriétés aux Houches",
+    ],
+    faq: [
+      {
+        question: "L'eau de Chamonix est-elle vraiment calcaire ?",
+        answer:
+          "Oui, contrairement à l'idée reçue que l'eau glaciaire serait douce, l'eau du robinet à Chamonix présente une dureté de 18 à 28 TH. Le réseau de distribution traverse des formations calcaires qui enrichissent l'eau en calcium et magnésium. Les Houches et Servoz affichent généralement des valeurs plus élevées que le centre-ville. Un adoucisseur reste utile dès 15 TH pour protéger vos équipements.",
+      },
+      {
+        question: "Un adoucisseur est-il utile pour une résidence secondaire à Chamonix ?",
+        answer:
+          "Oui, et c'est même particulièrement recommandé. Lors des périodes d'inoccupation, le tartre se concentre dans les canalisations et les chauffe-eaux stagnants. Au retour, les dépôts peuvent endommager les équipements ou altérer la qualité de l'eau. Un adoucisseur avec mise en veille automatique protège votre installation même en votre absence. Nous proposons des solutions spécifiquement adaptées aux résidences secondaires du massif du Mont-Blanc.",
+      },
+      {
+        question: "Intervenez-vous à Argentière et aux Houches ?",
+        answer:
+          "Oui, nous couvrons l'ensemble de la vallée de Chamonix : le centre-ville, Les Praz, Argentière, Les Houches, Servoz et Les Bossons. Nos techniciens interviennent pour l'installation, l'entretien et le dépannage d'adoucisseurs d'eau. Devis gratuit sous 24h, installation possible en demi-journée.",
+      },
     ],
   },
   {
