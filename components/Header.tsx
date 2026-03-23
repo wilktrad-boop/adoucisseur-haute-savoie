@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
 
+const phoneHref = `tel:${siteConfig.contact.phone.replace(/\s/g, "")}`;
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -76,8 +78,17 @@ export default function Header() {
             })}
           </nav>
 
-          {/* Bouton CTA desktop */}
-          <div className="hidden md:block">
+          {/* CTA desktop : téléphone + devis */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href={phoneHref}
+              className="flex items-center gap-2 text-primary-700 font-semibold hover:text-primary-900 transition-colors"
+            >
+              <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              {siteConfig.contact.phone}
+            </a>
             <Link
               href="/contact"
               className="bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors font-medium"
@@ -137,6 +148,16 @@ export default function Header() {
             aria-label="Navigation mobile"
           >
             <div className="flex flex-col space-y-4">
+              <a
+                href={phoneHref}
+                className="flex items-center justify-center gap-2 bg-primary-50 text-primary-700 font-semibold px-4 py-3 rounded-lg border border-primary-200"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Appeler le {siteConfig.contact.phone}
+              </a>
               {navLinks.map((link) => {
                 const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
                 return (

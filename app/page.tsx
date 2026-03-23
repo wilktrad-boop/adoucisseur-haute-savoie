@@ -146,13 +146,27 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-2xl p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Demandez votre devis gratuit
+              <h2 className="text-2xl font-bold text-gray-900 mb-1">
+                Devis gratuit sous 24h
               </h2>
-              <p className="text-gray-600 mb-6">
-                Remplissez le formulaire et recevez un devis personnalisé sous 24h.
+              <p className="text-gray-500 text-sm mb-5">
+                3 champs, 30 secondes — on vous rappelle rapidement.
               </p>
-              <LeadForm />
+              <LeadForm compact />
+              <div className="mt-4 flex items-center gap-3">
+                <div className="flex-1 border-t border-gray-200" />
+                <span className="text-sm text-gray-400">ou</span>
+                <div className="flex-1 border-t border-gray-200" />
+              </div>
+              <a
+                href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
+                className="mt-4 flex items-center justify-center gap-2 w-full border-2 border-primary-600 text-primary-600 font-semibold px-4 py-3 rounded-lg hover:bg-primary-50 transition"
+              >
+                <svg className="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Appeler le {siteConfig.contact.phone}
+              </a>
             </div>
           </div>
         </div>

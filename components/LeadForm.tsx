@@ -7,9 +7,10 @@ import { departementConfig } from "@/config/departement";
 interface LeadFormProps {
   villePreselectionnee?: string;
   className?: string;
+  compact?: boolean;
 }
 
-export default function LeadForm({ villePreselectionnee, className = "" }: LeadFormProps) {
+export default function LeadForm({ villePreselectionnee, className = "", compact = false }: LeadFormProps) {
   const [formData, setFormData] = useState({
     nom: "",
     email: "",
@@ -93,120 +94,174 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
 
   return (
     <form onSubmit={handleSubmit} className={`space-y-4 ${className}`}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="nom" className="block text-sm font-medium text-gray-700 mb-1">
-            Nom *
-          </label>
-          <input
-            type="text"
-            id="nom"
-            required
-            value={formData.nom}
-            onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-            Email *
-          </label>
-          <input
-            type="email"
-            id="email"
-            required
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-          />
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 mb-1">
-            Téléphone *
-          </label>
-          <input
-            type="tel"
-            id="telephone"
-            required
-            value={formData.telephone}
-            onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-            placeholder="06 12 34 56 78"
-          />
-        </div>
-
-        <div>
-          <label htmlFor="codePostal" className="block text-sm font-medium text-gray-700 mb-1">
-            Code postal
-          </label>
-          <input
-            type="text"
-            id="codePostal"
-            value={formData.codePostal}
-            onChange={(e) => setFormData({ ...formData, codePostal: e.target.value })}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-            placeholder="74000"
-          />
-        </div>
-      </div>
-
-      <div>
-        <label htmlFor="ville" className="block text-sm font-medium text-gray-700 mb-1">
-          Ville *
-        </label>
-        <select
-          id="ville"
-          required
-          value={formData.ville}
-          onChange={(e) => setFormData({ ...formData, ville: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-        >
-          <option value="">Sélectionnez une ville</option>
-          {villes.map((ville) => (
-            <option key={ville.slug} value={ville.nom}>
-              {ville.nom} ({ville.codePostal})
-            </option>
-          ))}
-          <option value="autre">Autre ville en {departementConfig.departementName}</option>
-        </select>
-      </div>
-
-      <div>
-        <label htmlFor="besoin" className="block text-sm font-medium text-gray-700 mb-1">
-          Type de besoin *
-        </label>
-        <select
-          id="besoin"
-          required
-          value={formData.besoin}
-          onChange={(e) => setFormData({ ...formData, besoin: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-        >
-          <option value="installation">Installation d'un adoucisseur</option>
-          <option value="entretien">Entretien d'un adoucisseur</option>
-          <option value="depannage">Dépannage / Réparation</option>
-          <option value="remplacement">Remplacement d'un adoucisseur</option>
-          <option value="devis">Demande de devis / Information</option>
-        </select>
-      </div>
-
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-          Message
-        </label>
-        <textarea
-          id="message"
-          rows={4}
-          value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
-          placeholder="Décrivez votre besoin ou posez vos questions..."
-        />
-      </div>
+      {/* Mode compact : 3 champs seulement */}
+      {compact ? (
+        <>
+          <div>
+            <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 mb-1">
+              Votre téléphone *
+            </label>
+            <input
+              type="tel"
+              id="telephone"
+              required
+              value={formData.telephone}
+              onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+              placeholder="06 12 34 56 78"
+            />
+          </div>
+          <div>
+            <label htmlFor="ville" className="block text-sm font-medium text-gray-700 mb-1">
+              Votre ville *
+            </label>
+            <select
+              id="ville"
+              required
+              value={formData.ville}
+              onChange={(e) => setFormData({ ...formData, ville: e.target.value })}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+            >
+              <option value="">Sélectionnez une ville</option>
+              {villes.map((ville) => (
+                <option key={ville.slug} value={ville.nom}>
+                  {ville.nom} ({ville.codePostal})
+                </option>
+              ))}
+              <option value="autre">Autre ville en {departementConfig.departementName}</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="besoin" className="block text-sm font-medium text-gray-700 mb-1">
+              Votre besoin *
+            </label>
+            <select
+              id="besoin"
+              required
+              value={formData.besoin}
+              onChange={(e) => setFormData({ ...formData, besoin: e.target.value })}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+            >
+              <option value="installation">Installation d'un adoucisseur</option>
+              <option value="entretien">Entretien d'un adoucisseur</option>
+              <option value="depannage">Dépannage / Réparation</option>
+              <option value="remplacement">Remplacement d'un adoucisseur</option>
+              <option value="devis">Demande de devis / Information</option>
+            </select>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="nom" className="block text-sm font-medium text-gray-700 mb-1">
+                Nom *
+              </label>
+              <input
+                type="text"
+                id="nom"
+                required
+                value={formData.nom}
+                onChange={(e) => setFormData({ ...formData, nom: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                Email *
+              </label>
+              <input
+                type="email"
+                id="email"
+                required
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 mb-1">
+                Téléphone *
+              </label>
+              <input
+                type="tel"
+                id="telephone"
+                required
+                value={formData.telephone}
+                onChange={(e) => setFormData({ ...formData, telephone: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+                placeholder="06 12 34 56 78"
+              />
+            </div>
+            <div>
+              <label htmlFor="codePostal" className="block text-sm font-medium text-gray-700 mb-1">
+                Code postal
+              </label>
+              <input
+                type="text"
+                id="codePostal"
+                value={formData.codePostal}
+                onChange={(e) => setFormData({ ...formData, codePostal: e.target.value })}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+                placeholder="74000"
+              />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="ville" className="block text-sm font-medium text-gray-700 mb-1">
+              Ville *
+            </label>
+            <select
+              id="ville"
+              required
+              value={formData.ville}
+              onChange={(e) => setFormData({ ...formData, ville: e.target.value })}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+            >
+              <option value="">Sélectionnez une ville</option>
+              {villes.map((ville) => (
+                <option key={ville.slug} value={ville.nom}>
+                  {ville.nom} ({ville.codePostal})
+                </option>
+              ))}
+              <option value="autre">Autre ville en {departementConfig.departementName}</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="besoin" className="block text-sm font-medium text-gray-700 mb-1">
+              Type de besoin *
+            </label>
+            <select
+              id="besoin"
+              required
+              value={formData.besoin}
+              onChange={(e) => setFormData({ ...formData, besoin: e.target.value })}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+            >
+              <option value="installation">Installation d'un adoucisseur</option>
+              <option value="entretien">Entretien d'un adoucisseur</option>
+              <option value="depannage">Dépannage / Réparation</option>
+              <option value="remplacement">Remplacement d'un adoucisseur</option>
+              <option value="devis">Demande de devis / Information</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows={4}
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white"
+              placeholder="Décrivez votre besoin ou posez vos questions..."
+            />
+          </div>
+        </>
+      )}
 
       {submitStatus !== "idle" && feedbackMessage && (
         <div
@@ -239,6 +294,8 @@ export default function LeadForm({ villePreselectionnee, className = "" }: LeadF
             </svg>
             Envoi en cours...
           </>
+        ) : compact ? (
+          "Recevoir un devis gratuit sous 24h →"
         ) : (
           "Demander un devis gratuit"
         )}
