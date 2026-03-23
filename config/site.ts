@@ -290,6 +290,91 @@ export const villes: Ville[] = [
       "Entretien pour les PME artisanales",
     ],
   },
+  {
+    slug: "saint-julien-en-genevois",
+    nom: "Saint-Julien-en-Genevois",
+    codePostal: "74160",
+    zone: "Genevois français",
+    metaDescription:
+      "Adoucisseur d'eau à Saint-Julien-en-Genevois (74160) — eau très dure 28-38 TH. Installation, entretien et dépannage. Devis gratuit sous 24h.",
+    quartiers: [
+      "Centre-ville",
+      "Neydens",
+      "Archamps",
+      "Collonges-sous-Salève",
+      "Bossey",
+      "Viry",
+      "Valleiry",
+    ],
+    caracteristiquesEau:
+      "Saint-Julien-en-Genevois se situe en plein cœur du Genevois français, une zone géographique caractérisée par une eau parmi les plus calcaires de Haute-Savoie. La dureté oscille entre 28 et 38 TH selon les communes du canton — Archamps, Collonges-sous-Salève et Viry affichant les valeurs les plus élevées, dues à la nature karstique des aquifères sous-jacents (molasses miocènes et calcaires du Salève). Cette dureté se traduit concrètement par un encrassement rapide des chauffe-eaux, des robinetteries et des électroménagers. La population frontalière, à fort pouvoir d'achat, investit fréquemment dans des systèmes de traitement de l'eau pour protéger des logements récents et bien équipés.",
+    dureteEau: "28-38 TH",
+    referencesLocales: [
+      "Installations dans les résidences neuves du Technoparc d'Archamps",
+      "Entretien pour des maisons individuelles à Collonges-sous-Salève",
+      "Pose d'adoucisseurs pour des familles frontalières à Viry et Valleiry",
+      "Dépannages à Neydens et Bossey",
+    ],
+    faq: [
+      {
+        question: "Quelle est la dureté de l'eau à Saint-Julien-en-Genevois ?",
+        answer:
+          "La dureté de l'eau à Saint-Julien-en-Genevois et dans le Genevois français varie de 28 à 38 TH selon les communes. Les secteurs d'Archamps, Collonges-sous-Salève et Viry sont particulièrement concernés. À ces niveaux, un adoucisseur est fortement recommandé pour protéger vos équipements et réduire votre consommation de produits lessiviels.",
+      },
+      {
+        question: "Intervenez-vous dans les communes autour de Saint-Julien ?",
+        answer:
+          "Oui, nous couvrons l'ensemble du canton de Saint-Julien-en-Genevois : Archamps, Collonges-sous-Salève, Neydens, Bossey, Viry, Valleiry et toutes les communes limitrophes. La qualité de l'eau est similaire sur tout le secteur, ce qui rend l'installation d'un adoucisseur particulièrement pertinente dans toute cette zone frontalière.",
+      },
+      {
+        question: "Combien coûte l'installation d'un adoucisseur à Saint-Julien-en-Genevois ?",
+        answer:
+          "Le prix d'un adoucisseur à Saint-Julien-en-Genevois varie entre 1 200€ et 2 800€ fourni et posé selon la taille du logement et la dureté locale de l'eau. Nous établissons un devis gratuit et personnalisé sous 24h. Pour une eau à 35 TH, un adoucisseur de capacité suffisante est recommandé pour garantir une eau correctement adoucie même en forte consommation.",
+      },
+    ],
+  },
+  {
+    slug: "evian-les-bains",
+    nom: "Évian-les-Bains",
+    codePostal: "74500",
+    zone: "Chablais",
+    metaDescription:
+      "Adoucisseur d'eau à Évian-les-Bains (74500) — eau du robinet calcaire 22-30 TH malgré la source Évian. Installation et entretien. Devis gratuit.",
+    quartiers: [
+      "Centre thermal",
+      "Neuvecelle",
+      "Maxilly-sur-Léman",
+      "Saint-Gingolph",
+      "Lugrin",
+      "Meillerie",
+    ],
+    caracteristiquesEau:
+      "Évian-les-Bains présente un paradoxe bien connu : la source Évian, exploitée par Danone, livre une eau de source particulièrement pure et douce — mais ce n'est pas l'eau qui coule dans les robinets des habitants. Le réseau public d'Évian est alimenté par des captages différents dans les Alpes du Chablais, dont la dureté oscille entre 22 et 30 TH. Les communes voisines comme Neuvecelle, Maxilly-sur-Léman et Lugrin présentent des valeurs similaires à légèrement supérieures. Les chauffe-eaux, lave-linges et robinetteries s'entartrent donc progressivement, comme dans toute la région du lac Léman.",
+    dureteEau: "22-30 TH",
+    referencesLocales: [
+      "Installations dans les hôtels et résidences thermales",
+      "Pose pour des villas avec vue sur le lac Léman à Neuvecelle",
+      "Entretien d'adoucisseurs dans les résidences secondaires de Lugrin",
+      "Dépannages pour des maisons individuelles à Maxilly-sur-Léman",
+    ],
+    faq: [
+      {
+        question: "L'eau du robinet à Évian est-elle aussi douce que la source Évian ?",
+        answer:
+          "Non, c'est une idée reçue très répandue. La source Évian (exploitée par Danone) est un captage privé distinct du réseau public d'eau potable. L'eau du robinet à Évian-les-Bains provient d'autres captages alpins et présente une dureté de 22 à 30 TH, ce qui est considéré comme de l'eau dure à très dure. Un adoucisseur est donc utile pour les habitants d'Évian, comme pour leurs voisins du Chablais.",
+      },
+      {
+        question: "Intervenez-vous à Neuvecelle, Lugrin et Meillerie ?",
+        answer:
+          "Oui, nous couvrons Évian-les-Bains et toutes les communes du Chablais riverain du Léman : Neuvecelle, Maxilly-sur-Léman, Saint-Gingolph, Lugrin, Meillerie et au-delà. La dureté de l'eau est relativement homogène sur tout ce secteur (22-30 TH), ce qui justifie l'installation d'un adoucisseur dans toute la zone.",
+      },
+      {
+        question: "Un adoucisseur est-il adapté pour une résidence secondaire à Évian ?",
+        answer:
+          "Oui, et c'est particulièrement important pour les résidences inoccupées plusieurs mois. Le tartre se concentre dans les canalisations et les ballons d'eau chaude pendant les périodes sans circulation. Nous proposons des adoucisseurs avec mise en veille programmable, adaptés aux résidences secondaires du bord du Léman.",
+      },
+    ],
+  },
 ];
 
 export const getVilleBySlug = (slug: string): Ville | undefined => {
