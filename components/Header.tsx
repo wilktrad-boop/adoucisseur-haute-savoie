@@ -29,14 +29,12 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { href: "/", label: "Accueil" },
     { href: "/adoucisseur", label: "Adoucisseur" },
     { href: "/entretien-adoucisseur", label: "Entretien" },
     { href: "/depannage-adoucisseur", label: "Dépannage" },
     { href: "/prix-adoucisseur", label: "Prix" },
     { href: "/guides", label: "Guides" },
     { href: "/villes", label: "Villes" },
-    { href: "/contact", label: "Contact" },
   ];
 
   return (
@@ -58,7 +56,7 @@ export default function Header() {
           </Link>
           
           {/* Navigation desktop */}
-          <nav className="hidden md:flex space-x-6" aria-label="Navigation principale">
+          <nav className="hidden md:flex space-x-4 text-sm" aria-label="Navigation principale">
             {navLinks.map((link) => {
               const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
               return (
@@ -79,10 +77,10 @@ export default function Header() {
           </nav>
 
           {/* CTA desktop : téléphone + devis */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3 shrink-0">
             <a
               href={phoneHref}
-              className="flex items-center gap-2 text-primary-700 font-semibold hover:text-primary-900 transition-colors"
+              className="flex items-center gap-1.5 text-sm text-primary-700 font-semibold hover:text-primary-900 transition-colors whitespace-nowrap"
             >
               <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
