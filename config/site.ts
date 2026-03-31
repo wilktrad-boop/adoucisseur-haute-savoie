@@ -35,7 +35,7 @@ export const villes: Ville[] = [
     zone: "Lac d'Annecy",
     image: "/Villes/annecy.png",
     metaDescription:
-      "Adoucisseur d'eau à Annecy (74000) — eau dure 20-30 TH. Installation, entretien et dépannage par des experts. Devis gratuit sous 24h.",
+      "Adoucisseur d'eau à Annecy (74000) — eau dure 20-30 TH selon les quartiers. Installation, entretien et dépannage par des experts. Devis gratuit sous 24h, intervention en demi-journée.",
     quartiers: [
       "Annecy-le-Vieux",
       "Seynod",
@@ -45,31 +45,44 @@ export const villes: Ville[] = [
       "Les Fins",
       "Meythet",
       "Pringy",
+      "Argonay",
+      "Épagny Metz-Tessy",
     ],
     caracteristiquesEau:
-      "L'eau distribuée à Annecy est issue à la fois du lac d'Annecy et de sources alpines captées par le Syndicat des Eaux du lac d'Annecy (SILA). Sa dureté oscille entre 20 et 30 TH selon les secteurs : les quartiers centraux bénéficient d'une eau légèrement moins calcaire que les zones périphériques (Annecy-le-Vieux, Seynod, Meythet) raccordées au réseau intercommunal. Au-delà de 15 TH, le tartre se dépose progressivement sur les résistances, robinetteries et canalisations. À Annecy, cela se traduit concrètement par un encrassement accéléré des chauffe-eaux et une consommation accrue de produits lessiviels.",
+      "L'eau distribuée à Annecy est issue à la fois du lac d'Annecy et de sources alpines captées par le Syndicat des Eaux du lac d'Annecy (SILA). La dureté de l'eau à Annecy oscille entre 20 et 30 TH (Titre Hydrotimétrique) selon les secteurs. Les quartiers centraux bénéficient d'une eau du lac, naturellement plus douce (20-23 TH), tandis que les zones périphériques comme Annecy-le-Vieux, Seynod et Meythet raccordées au réseau intercommunal présentent une eau plus calcaire (25-30 TH). À partir de 15 TH, le tartre se dépose progressivement sur les résistances, robinetteries et canalisations. À Annecy, cela se traduit par un encrassement accéléré des chauffe-eaux, des traces blanches sur la robinetterie et une surconsommation de produits lessiviels.",
     dureteEau: "20-30 TH",
     referencesLocales: [
-      "Installations dans les villas autour du lac d'Annecy",
+      "Installations dans les villas et résidences autour du lac d'Annecy",
       "Entretien pour les copropriétés de Seynod et Cran-Gevrier",
-      "Dépannages récurrents à Annecy-le-Vieux",
-      "Pose d'adoucisseurs pour des résidences récentes à Meythet",
+      "Dépannages récurrents à Annecy-le-Vieux et Meythet",
+      "Pose d'adoucisseurs pour des appartements récents à Épagny et Argonay",
+      "Interventions pour des hôtels et locations saisonnières du bord du lac",
     ],
     faq: [
       {
         question: "Quelle est la dureté de l'eau à Annecy ?",
         answer:
-          "La dureté de l'eau à Annecy se situe généralement entre 20 et 30 TH (Titre Hydrotimétrique). Elle varie selon les quartiers : les secteurs centraux sont alimentés par l'eau du lac, naturellement plus douce, tandis que les quartiers périphériques comme Annecy-le-Vieux, Seynod ou Meythet reçoivent une eau intercommunale plus calcaire. À partir de 15 TH, un adoucisseur est recommandé pour protéger vos équipements.",
+          "La dureté de l'eau à Annecy varie entre 20 et 30 TH selon les quartiers. Les secteurs centraux alimentés par le lac d'Annecy ont une eau autour de 20-23 TH, tandis qu'Annecy-le-Vieux, Seynod, Meythet et Cran-Gevrier, raccordés au réseau intercommunal (SILA), reçoivent une eau plus chargée (25-30 TH). À titre de comparaison, l'eau est considérée dure à partir de 15 TH — un adoucisseur est donc recommandé dans toute la commune.",
       },
       {
         question: "Pourquoi l'eau est-elle calcaire à Annecy-le-Vieux et Seynod ?",
         answer:
-          "Ces quartiers sont raccordés au réseau du Syndicat Intercommunal des Eaux de la région d'Annecy, dont l'eau provient de captages souterrains plus chargés en calcium et magnésium que l'eau de surface du lac. La traversée des sols calcaires des Aravis et des Bauges augmente la minéralisation. Un adoucisseur dimensionné pour 28-30 TH est généralement recommandé dans ces secteurs.",
+          "Ces quartiers sont raccordés au réseau intercommunal du SILA (Syndicat Intercommunal du Lac d'Annecy), dont une partie de l'eau provient de captages souterrains dans les massifs des Aravis et des Bauges. Ces formations géologiques calcaires enrichissent naturellement l'eau en calcium et magnésium. La dureté peut atteindre 28-30 TH dans ces secteurs, ce qui accélère l'entartrage des équipements.",
       },
       {
         question: "Combien coûte l'installation d'un adoucisseur à Annecy ?",
         answer:
-          "Le prix d'un adoucisseur d'eau à Annecy varie entre 1 000€ et 2 500€ fourni et posé, selon la taille de votre logement, le nombre de personnes et la dureté de l'eau sur votre secteur. Nous établissons un devis gratuit et personnalisé sous 24h, avec une intervention possible en demi-journée.",
+          "Le prix d'un adoucisseur d'eau à Annecy varie entre 1 000 € et 2 500 € fourni et posé, selon la taille du logement, le nombre d'occupants et la dureté locale (20-30 TH). Nous proposons un devis gratuit et personnalisé sous 24h, avec une intervention rapide possible en demi-journée. Pour les appartements du centre ou les maisons de Seynod et Meythet, nous adaptons le dimensionnement à chaque situation.",
+      },
+      {
+        question: "Faut-il un adoucisseur dans un appartement à Annecy ?",
+        answer:
+          "Oui, même en appartement, un adoucisseur est utile à Annecy. La dureté de l'eau (20-30 TH) encrasse les chauffe-eaux collectifs, les lave-linges individuels et détériore la robinetterie. L'installation dans un appartement est possible dès lors qu'on accède à l'arrivée d'eau froide du logement, généralement sous l'évier ou dans un placard technique. Nos techniciens réalisent régulièrement des poses dans les immeubles de Cran-Gevrier, Novel et Épagny.",
+      },
+      {
+        question: "Y a-t-il du calcaire dans l'eau du lac d'Annecy ?",
+        answer:
+          "Oui. Malgré sa réputation de lac propre, l'eau du lac d'Annecy distribuée dans le réseau public présente une dureté de 20-23 TH — ce qui est considéré comme de l'eau dure. Le bassin versant du lac est entouré de massifs calcaires (Aravis, Bauges) qui enrichissent naturellement les eaux de ruissellement et les captages. Un adoucisseur reste donc pertinent même dans les quartiers alimentés directement par le lac.",
       },
     ],
   },

@@ -2,22 +2,23 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Section from "@/components/Section";
 import LeadForm from "@/components/LeadForm";
+import FAQ from "@/components/FAQ";
 import JsonLd from "@/components/JsonLd";
 import RelatedServices from "@/components/RelatedServices";
 import { siteConfig } from "@/config/site";
 import { departementConfig } from "@/config/departement";
 
 export const metadata: Metadata = {
-  title: `Dépannage d'adoucisseur d'eau en ${departementConfig.departementName} - Réparation et intervention d'urgence`,
+  title: `Dépannage adoucisseur Haute-Savoie (74) — Intervention rapide Annecy, Annemasse`,
   description:
-    `Service de dépannage et réparation d'adoucisseurs d'eau en ${departementConfig.departementName}. Intervention rapide pour tous types de pannes. Disponible à ${departementConfig.mainCities.slice(0, 4).join(", ")} et dans tout le département.`,
+    `Dépannage adoucisseur d'eau en Haute-Savoie : panne, fuite, eau salée, calcaire qui revient. Intervention sous 24h à Annecy, Annemasse, Thonon, Chamonix et dans tout le 74.`,
   alternates: {
     canonical: "/depannage-adoucisseur",
   },
   openGraph: {
-    title: `Dépannage d'adoucisseur d'eau en ${departementConfig.departementName} - Réparation et intervention d'urgence`,
+    title: `Dépannage adoucisseur Haute-Savoie (74) — Intervention rapide`,
     description:
-      `Service de dépannage et réparation d'adoucisseurs d'eau en ${departementConfig.departementName}. Intervention rapide.`,
+      `Votre adoucisseur est en panne en Haute-Savoie ? Intervention sous 24h à Annecy, Annemasse, Thonon, Chamonix. Diagnostic et réparation sur site.`,
     url: `${siteConfig.domain}/depannage-adoucisseur`,
     type: "website",
     images: [
@@ -31,10 +32,43 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `Dépannage d'adoucisseur d'eau en ${departementConfig.departementName} - Intervention d'urgence`,
-    description: `Service de dépannage et réparation d'adoucisseurs d'eau en ${departementConfig.departementName}.`,
+    title: `Dépannage adoucisseur Haute-Savoie (74) — Intervention rapide`,
+    description: `Votre adoucisseur est en panne en Haute-Savoie ? Intervention sous 24h, diagnostic et réparation sur site.`,
   },
 };
+
+const faqItems = [
+  {
+    question: "Mon adoucisseur ne consomme plus de sel — est-ce une panne ?",
+    answer:
+      "Pas nécessairement, mais c'est un signal d'alarme. Si le bac à sel est plein mais que le niveau ne baisse pas, l'adoucisseur ne se régénère plus. Causes possibles : vanne multivoies bloquée, timer défaillant, prise électrique coupée, ou bouchon de sel (pont de sel). Vérifiez d'abord le branchement électrique, puis appelez un technicien si le problème persiste.",
+  },
+  {
+    question: "Mon eau a un goût salé après adoucisseur — que faire ?",
+    answer:
+      "Un goût salé indique que l'eau de rinçage post-régénération n'est pas correctement évacuée. Le cycle de rinçage est bloqué ou insuffisant. C'est une panne qui nécessite une intervention rapide car l'eau salée peut endommager vos équipements et est désagréable à consommer. Coupez l'adoucisseur en position bypass et appelez-nous.",
+  },
+  {
+    question: "Le calcaire est revenu malgré l'adoucisseur en marche — pourquoi ?",
+    answer:
+      "Si le calcaire réapparaît, plusieurs causes sont possibles : résine épuisée ou colmatée (remplacement nécessaire), régénération insuffisante (ajuster la quantité de sel ou la fréquence), vanne bypass ouverte par inadvertance, ou réglage de dureté trop élevé. Un technicien mesure la dureté en sortie d'adoucisseur pour diagnostiquer rapidement.",
+  },
+  {
+    question: "Y a-t-il une fuite sous mon adoucisseur — est-ce grave ?",
+    answer:
+      "Une fuite, même minime, doit être traitée rapidement. Les adoucisseurs travaillent sous pression et une fuite peut s'aggraver rapidement. Coupez l'arrivée d'eau de l'adoucisseur (bypass) et contactez-nous. La plupart des fuites proviennent d'un joint usé, d'un raccord desserré ou d'une vanne endommagée — des réparations généralement rapides et peu coûteuses.",
+  },
+  {
+    question: "Mon adoucisseur fait du bruit — est-ce normal ?",
+    answer:
+      "Un léger bruit pendant la régénération (généralement la nuit) est normal. En revanche, des bruits forts, des claquements ou des bruits continus sont anormaux. Causes fréquentes : vanne multivoies grippée, résine se déplaçant dans le tank, moteur de la vanne défaillant. Ne laissez pas un adoucisseur bruyant sans diagnostic.",
+  },
+  {
+    question: "Combien coûte un dépannage d'adoucisseur en Haute-Savoie ?",
+    answer:
+      "Le coût d'un dépannage dépend de la panne. Un déplacement + diagnostic coûte généralement 80 à 120 €. Une réparation simple (joint, nettoyage de vanne) : 80 à 200 €. Un remplacement de résine : 200 à 400 €. Un remplacement de vanne multivoies : 150 à 350 €. Nous établissons un devis transparent avant toute intervention.",
+  },
+];
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -43,27 +77,54 @@ const serviceSchema = {
   provider: {
     "@type": "HomeAndConstructionBusiness",
     name: siteConfig.name,
+    telephone: siteConfig.contact.phone,
+    url: siteConfig.domain,
   },
   areaServed: {
-    "@type": "State",
+    "@type": "AdministrativeArea",
     name: departementConfig.departementName,
   },
   description:
-    `Service de dépannage et réparation d'adoucisseurs d'eau dans le département de la ${departementConfig.departementName}. Intervention rapide.`,
+    `Service de dépannage et réparation d'adoucisseurs d'eau dans le département de la ${departementConfig.departementName}. Intervention rapide sous 24h.`,
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
 };
 
 export default function DepannagePage() {
   return (
     <>
       <JsonLd data={serviceSchema} />
-      
-      <Section className="bg-gradient-to-br from-primary-50 to-white py-12">
+      <JsonLd data={faqSchema} />
+
+      <Section className="bg-gradient-to-br from-red-50 to-white py-12">
+        <nav className="text-sm text-gray-500 mb-4" aria-label="Fil d'Ariane">
+          <Link href="/" className="hover:text-primary-600">Accueil</Link>
+          <span className="mx-2">/</span>
+          <span>Dépannage adoucisseur Haute-Savoie</span>
+        </nav>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Dépannage d'adoucisseur d'eau en {departementConfig.departementName}
+          Dépannage adoucisseur d'eau en Haute-Savoie (74)
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl">
-          Un dysfonctionnement bloque votre système de traitement de l'eau ? Nos techniciens interviennent en urgence sur l'ensemble du territoire haut-savoyard pour identifier l'origine du problème et restaurer le fonctionnement optimal de votre équipement. Disponibilité 7j/7 pour les situations critiques.
+          Votre adoucisseur est en panne, fuit ou ne traite plus correctement l'eau ? Nos techniciens interviennent sous 24h dans tout le département — Annecy, Annemasse, Thonon-les-Bains, Chamonix, Cluses et toutes les communes de Haute-Savoie.
         </p>
+        <div className="flex flex-wrap gap-3 mt-6">
+          <a href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 bg-red-600 text-white font-bold px-5 py-2.5 rounded-lg hover:bg-red-700 transition">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            Appeler maintenant
+          </a>
+          <Link href="/contact" className="inline-flex items-center gap-2 border-2 border-gray-700 text-gray-700 font-semibold px-5 py-2.5 rounded-lg hover:bg-gray-50 transition">
+            Demander une intervention
+          </Link>
+        </div>
       </Section>
 
       <Section>
@@ -262,6 +323,14 @@ export default function DepannagePage() {
                 couvrent l'intégralité du département de la Haute-Savoie.
               </p>
             </div>
+          </section>
+
+          {/* FAQ */}
+          <section>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Questions fréquentes sur le dépannage adoucisseur en Haute-Savoie
+            </h2>
+            <FAQ items={faqItems} />
           </section>
 
           <section>

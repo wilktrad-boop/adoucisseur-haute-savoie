@@ -11,16 +11,16 @@ import { departementConfig } from "@/config/departement";
 import { faqHome } from "@/data/faq";
 
 export const metadata: Metadata = {
-  title: `Adoucisseur d'eau en ${departementConfig.departementName} (${departementConfig.departementNumber}) – Installation, entretien et dépannage`,
+  title: `Adoucisseur d'eau Haute-Savoie (74) — Installation, entretien, dépannage`,
   description:
-    `Spécialiste de l'installation et de l'entretien d'adoucisseurs d'eau en ${departementConfig.departementName}. Devis gratuit pour ${departementConfig.mainCities.slice(0, 3).join(", ")} et tout le ${departementConfig.departementName}.`,
+    `Adoucisseur d'eau en Haute-Savoie : eau dure 18-40 TH à Annecy, Annemasse, Thonon, Chamonix. Installation, entretien et dépannage par des experts. Devis gratuit sous 24h.`,
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: `Adoucisseur d'eau en ${departementConfig.departementName} (${departementConfig.departementNumber}) – Installation, entretien et dépannage`,
+    title: `Adoucisseur d'eau Haute-Savoie (74) — Installation, entretien, dépannage`,
     description:
-      `Spécialiste de l'installation, l'entretien et le dépannage d'adoucisseurs d'eau en ${departementConfig.departementName}. Devis gratuit.`,
+      `Adoucisseur d'eau en Haute-Savoie : eau dure 18-40 TH à Annecy, Annemasse, Thonon, Chamonix. Devis gratuit sous 24h.`,
     url: siteConfig.domain,
     type: "website",
     locale: "fr_FR",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `Adoucisseur d'eau en ${departementConfig.departementName} (${departementConfig.departementNumber}) – Installation, entretien et dépannage`,
-    description: `Spécialiste de l'installation, l'entretien et le dépannage d'adoucisseurs d'eau en ${departementConfig.departementName}. Devis gratuit.`,
+    title: `Adoucisseur d'eau Haute-Savoie (74) — Installation, entretien, dépannage`,
+    description: `Adoucisseur d'eau en Haute-Savoie : eau dure 18-40 TH. Installation, entretien, dépannage. Devis gratuit sous 24h.`,
   },
 };
 
