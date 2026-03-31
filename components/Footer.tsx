@@ -23,26 +23,45 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Liens utiles</h3>
+            <h3 className="text-white text-lg font-semibold mb-4">Nos services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="hover:text-white transition">
-                  Accueil
-                </Link>
-              </li>
-              <li>
                 <Link href="/adoucisseur" className="hover:text-white transition">
-                  Adoucisseur d'eau
+                  Installation d'adoucisseur d'eau
                 </Link>
               </li>
               <li>
                 <Link href="/entretien-adoucisseur" className="hover:text-white transition">
-                  Entretien
+                  Entretien adoucisseur
                 </Link>
               </li>
               <li>
                 <Link href="/depannage-adoucisseur" className="hover:text-white transition">
-                  Dépannage
+                  Dépannage adoucisseur
+                </Link>
+              </li>
+              <li>
+                <Link href="/prix-adoucisseur" className="hover:text-white transition">
+                  Prix et devis gratuit
+                </Link>
+              </li>
+              <li>
+                <Link href="/osmoseur-haute-savoie" className="hover:text-white transition">
+                  Osmoseur et filtration
+                </Link>
+              </li>
+            </ul>
+
+            <h3 className="text-white text-lg font-semibold mb-4 mt-6">Ressources</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/qualite-eau-haute-savoie" className="hover:text-white transition">
+                  Qualité de l'eau en Haute-Savoie
+                </Link>
+              </li>
+              <li>
+                <Link href="/guides" className="hover:text-white transition">
+                  Guides et conseils
                 </Link>
               </li>
               <li>
@@ -86,59 +105,79 @@ export default function Footer() {
               <h3 className="text-white text-lg font-semibold mb-4">Nos partenaires</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a 
-                    href="https://valence-adoucisseur.fr/" 
-                    target="_blank" 
+                  <a
+                    href="https://adoucisseur-yonne.fr/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
                   >
-                    Adoucisseur Valence
+                    Adoucisseur dans l'Yonne
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://www.adoucisseur-isere.fr/" 
-                    target="_blank" 
+                  <a
+                    href="https://valence-adoucisseur.fr/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
                   >
-                    Adoucisseur Isère
+                    Adoucisseur à Valence
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://www.adoucisseur-ain.fr/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.adoucisseur-isere.fr/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
                   >
-                    Adoucisseur Ain
+                    Adoucisseur en Isère
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.adoucisseur-ain.fr/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Adoucisseur dans l'Ain
                   </a>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-white text-lg font-semibold mb-4">Ils parlent de nous</h3>
+              <h3 className="text-white text-lg font-semibold mb-4">Nos partenaires nationaux</h3>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <a 
-                    href="https://adoucisseur-france.blogspot.com/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.mil-et-un-services.fr/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
                   >
-                    Adoucisseur France Blog
+                    Mil et Un Services
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="https://www.travauxpro360.com/comment-choisir-le-bon-adoucisseur-deau-pour-votre-maison-a-valence/" 
-                    target="_blank" 
+                  <a
+                    href="https://adoucisseur-france.eu/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
                   >
-                    Travaux Pro 360
+                    Adoucisseur France
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://adoucisseuretconfort.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition"
+                  >
+                    Adoucisseur et Confort
                   </a>
                 </li>
               </ul>
