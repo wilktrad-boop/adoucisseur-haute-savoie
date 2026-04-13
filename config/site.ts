@@ -92,7 +92,7 @@ export const villes: Ville[] = [
     codePostal: "74200",
     zone: "Chablais",
     metaDescription:
-      "Installation et entretien d'adoucisseurs d'eau à Thonon-les-Bains. Devis gratuit en Haute-Savoie.",
+      "Adoucisseur d'eau à Thonon-les-Bains (74200) — eau dure 25-35 TH dans le Chablais. Installation, entretien et dépannage par des experts. Devis gratuit sous 24h.",
     quartiers: [
       "Centre-ville",
       "Rives du Léman",
@@ -101,11 +101,30 @@ export const villes: Ville[] = [
       "Vongy",
     ],
     caracteristiquesEau:
-      "Avec une eau issue du Léman, la dureté reste élevée à cause des sols calcaires du Chablais.",
+      "L'eau distribuée à Thonon-les-Bains provient principalement du lac Léman via les installations de traitement de la ville, complétées par des captages souterrains dans les formations calcaires du Chablais. La dureté oscille entre 25 et 35 TH selon les secteurs — Vongy et les zones périphériques raccordées aux nappes souterraines affichant les valeurs les plus élevées. À ces niveaux, le tartre s'accumule progressivement sur les résistances de chauffe-eau, les robinetteries et l'électroménager. La proximité du lac ne protège pas : les eaux superficielles comme souterraines du Chablais traversent des formations géologiques calcaires qui les minéralisent avant distribution. Un adoucisseur est recommandé dès 15 TH, seuil largement dépassé dans toute la commune.",
     dureteEau: "25-35 TH",
     referencesLocales: [
-      "Installations dans les résidences proches du port",
-      "Entretien pour des maisons individuelles à Concise",
+      "Installations dans les résidences proches du port de Thonon",
+      "Entretien pour des maisons individuelles à Concise et Marlioz",
+      "Pose d'adoucisseurs pour des appartements au centre-ville",
+      "Dépannages et remplacement de résines à Vongy",
+    ],
+    faq: [
+      {
+        question: "Quelle est la dureté de l'eau à Thonon-les-Bains ?",
+        answer:
+          "La dureté de l'eau à Thonon-les-Bains varie entre 25 et 35 TH selon les secteurs. Les zones alimentées par les captages souterrains du Chablais (Vongy, périphérie) présentent les valeurs les plus élevées. À 25-35 TH, l'eau est classée 'très dure' — un adoucisseur est fortement recommandé pour protéger vos équipements et réduire votre consommation de produits lessiviels.",
+      },
+      {
+        question: "Un adoucisseur est-il utile malgré la proximité du lac Léman ?",
+        answer:
+          "Oui. L'eau du robinet à Thonon n'est pas l'eau brute du lac : elle est traitée et complétée par des captages souterrains dans les formations calcaires du Chablais, ce qui l'enrichit en calcium et magnésium. La dureté mesurée (25-35 TH) confirme que le calcaire pose des problèmes réels sur les installations domestiques, indépendamment de la proximité du lac.",
+      },
+      {
+        question: "Intervenez-vous à Vongy et dans les communes autour de Thonon ?",
+        answer:
+          "Oui, nous couvrons Thonon-les-Bains dans son intégralité (Centre-ville, Vongy, Concise, Marlioz, Rives du Léman) ainsi que les communes voisines du Chablais. La dureté de l'eau est similaire sur tout le secteur. Devis gratuit sous 24h, intervention possible en demi-journée.",
+      },
     ],
   },
   {
@@ -157,7 +176,7 @@ export const villes: Ville[] = [
     codePostal: "74300",
     zone: "Vallée de l'Arve",
     metaDescription:
-      "Installation et entretien d'adoucisseurs d'eau à Cluses. Intervention sur toute la vallée de l'Arve.",
+      "Adoucisseur d'eau à Cluses (74300) — eau très dure 30-40 TH dans la vallée de l'Arve. Installation, entretien et dépannage. Devis gratuit sous 24h, intervention rapide.",
     quartiers: [
       "Centre-ville",
       "La Sardagne",
@@ -166,11 +185,30 @@ export const villes: Ville[] = [
       "Scionzier",
     ],
     caracteristiquesEau:
-      "L'eau de la vallée de l'Arve est naturellement chargée en calcaire à cause des roches sédimentaires.",
+      "Cluses et la vallée de l'Arve figurent parmi les zones les plus touchées par la dureté de l'eau en Haute-Savoie. La dureté atteint 30 à 40 TH — classée 'eau extrêmement dure' au sens de la norme française. Cette eau provient de captages dans les roches sédimentaires calcaires et dolomitiques du massif du Faucigny, naturellement très riches en calcium et magnésium. La géologie encaissée de la vallée concentre ces minéraux dans les nappes souterraines. Concrètement, les résistances de chauffe-eau s'entartrent en quelques mois seulement, les joints de robinetterie durcissent prématurément et les lave-linges affichent une durée de vie réduite. À 35-40 TH, l'installation d'un adoucisseur se rentabilise en moins de 2 ans grâce aux économies réalisées sur l'énergie, les produits d'entretien et la longévité des équipements.",
     dureteEau: "30-40 TH",
     referencesLocales: [
-      "Installations pour les pavillons de Scionzier",
-      "Entretien d'adoucisseurs chez des industriels locaux",
+      "Installations pour les pavillons et maisons individuelles de Scionzier",
+      "Entretien d'adoucisseurs chez des PME industrielles locales",
+      "Pose d'adoucisseurs pour des appartements au centre de Cluses",
+      "Dépannages à Marignier et dans les communes de la vallée de l'Arve",
+    ],
+    faq: [
+      {
+        question: "Quelle est la dureté de l'eau à Cluses ?",
+        answer:
+          "La dureté de l'eau à Cluses atteint 30 à 40 TH selon les secteurs — c'est l'une des valeurs les plus élevées de Haute-Savoie. Cette eau extrêmement dure provient de captages dans les formations calcaires et dolomitiques du Faucigny. À ces niveaux, les dépôts de tartre sont visibles en quelques semaines sur la robinetterie et les équipements. Un adoucisseur est indispensable pour protéger votre installation.",
+      },
+      {
+        question: "Intervenez-vous à Scionzier et Marignier ?",
+        answer:
+          "Oui, nous couvrons l'ensemble de la vallée de l'Arve autour de Cluses : Scionzier, Marignier, Thyez, Nancy-sur-Cluses et les communes environnantes. La dureté de l'eau est similaire sur tout ce secteur (30-40 TH), ce qui justifie fortement l'installation d'un adoucisseur dans toute la zone.",
+      },
+      {
+        question: "Combien coûte un adoucisseur à Cluses avec une eau à 35-40 TH ?",
+        answer:
+          "Pour une eau à 35-40 TH à Cluses, il est important de choisir un adoucisseur correctement dimensionné pour la dureté locale. Le prix fourni et posé varie entre 1 200 € et 2 800 € selon la taille du foyer et le modèle. Un appareil sous-dimensionné ne suffira pas à traiter efficacement une eau aussi calcaire. Nous établissons un devis gratuit et personnalisé sous 24h après évaluation de vos besoins.",
+      },
     ],
   },
   {
@@ -179,7 +217,7 @@ export const villes: Ville[] = [
     codePostal: "74700",
     zone: "Pays du Mont-Blanc",
     metaDescription:
-      "Installation, entretien et dépannage d'adoucisseurs d'eau à Sallanches et dans le Pays du Mont-Blanc.",
+      "Adoucisseur d'eau à Sallanches (74700) — eau dure 22-32 TH dans le Pays du Mont-Blanc. Installation, entretien, dépannage. Devis gratuit sous 24h.",
     quartiers: [
       "Saint-Martin",
       "Saint-Roch",
@@ -188,11 +226,30 @@ export const villes: Ville[] = [
       "Domancy",
     ],
     caracteristiquesEau:
-      "Entre captages de montagne et réseau intercommunal, la dureté de l'eau varie mais reste calcaire.",
+      "L'eau de Sallanches et du Pays du Mont-Blanc est alimentée par un mix de sources alpines d'altitude et de captages dans les nappes du piémont. La dureté varie de 22 à 32 TH selon les quartiers et les communes — Saint-Roch et les zones basses bénéficiant des eaux les plus douces, tandis que Cordon, Domancy et les hameaux reliés au réseau intercommunal du bassin affichent des valeurs plus élevées. Si l'eau est globalement moins dure qu'à Cluses ou Rumilly, une dureté de 25-32 TH reste suffisante pour encrasser progressivement chauffe-eaux, robinetteries et lave-linges. Les chalets et résidences de montagne, souvent équipés de systèmes de chauffage à eau chaude sanitaire, sont particulièrement exposés au tartre.",
     dureteEau: "22-32 TH",
     referencesLocales: [
-      "Installations dans les chalets sur les hauteurs",
-      "Contrats d'entretien pour les copropriétés proches de Domancy",
+      "Installations dans les chalets sur les hauteurs de Sallanches et Cordon",
+      "Contrats d'entretien pour les copropriétés de Domancy",
+      "Pose d'adoucisseurs pour des résidences secondaires dans le secteur",
+      "Dépannages pour des maisons individuelles à Saint-Martin et Saint-Roch",
+    ],
+    faq: [
+      {
+        question: "L'eau est-elle calcaire à Sallanches ?",
+        answer:
+          "Oui, la dureté de l'eau à Sallanches varie de 22 à 32 TH selon les secteurs. Si l'altitude apporte des eaux de montagne naturellement plus douces dans certaines zones, le réseau intercommunal distribue aussi des eaux issues de captages plus minéralisés. À partir de 22 TH, le tartre se dépose progressivement sur les équipements, et un adoucisseur est recommandé pour préserver la plomberie et l'électroménager.",
+      },
+      {
+        question: "Intervenez-vous à Cordon et Domancy ?",
+        answer:
+          "Oui, nous couvrons Sallanches et toutes les communes du Pays du Mont-Blanc : Cordon, Domancy, Combloux, Megève et les alentours. Nos techniciens sont habitués aux installations en zone de montagne, y compris dans les chalets difficiles d'accès. Devis gratuit sous 24h.",
+      },
+      {
+        question: "Un adoucisseur est-il adapté pour un chalet de montagne à Sallanches ?",
+        answer:
+          "Oui, et c'est particulièrement utile pour les chalets équipés de planchers chauffants ou de systèmes de chauffage central à eau : le tartre réduit l'efficacité de ces installations et augmente la consommation d'énergie. Nous proposons des solutions adaptées aux chalets, y compris pour les résidences secondaires avec mises en veille prolongées.",
+      },
     ],
   },
   {
@@ -201,7 +258,7 @@ export const villes: Ville[] = [
     codePostal: "74130",
     zone: "Vallée de l'Arve",
     metaDescription:
-      "Installation et maintenance d'adoucisseurs d'eau à Bonneville. Devis gratuit en Haute-Savoie.",
+      "Adoucisseur d'eau à Bonneville (74130) — eau très dure 28-38 TH dans la vallée de l'Arve. Installation, entretien et dépannage. Devis gratuit sous 24h.",
     quartiers: [
       "Centre ancien",
       "Pontchy",
@@ -210,11 +267,30 @@ export const villes: Ville[] = [
       "Ayse",
     ],
     caracteristiquesEau:
-      "Le réseau intercommunal dessert une eau dure nécessitant une solution contre le tartre.",
+      "Bonneville se situe en pleine vallée de l'Arve, l'un des secteurs de Haute-Savoie où la dureté de l'eau est la plus problématique. La dureté atteint 28 à 38 TH, issue de captages dans les alluvions de l'Arve et les nappes souterraines des formations calcaires du Faucigny et des Bornes. Les quartiers de Pontchy et d'Ayse, raccordés au réseau intercommunal de la vallée, affichent les valeurs les plus élevées. À 30 TH et au-delà, le tartre se dépose à un rythme soutenu : une résistance de chauffe-eau standard s'encroûte en 2 à 3 ans sans protection, et les canalisations en cuivre voient leur section se réduire progressivement. Pour les lotissements neufs — nombreux autour de Bonneville — l'installation d'un adoucisseur dès l'emménagement évite toute dégradation prématurée des équipements.",
     dureteEau: "28-38 TH",
     referencesLocales: [
-      "Entretien d'adoucisseurs dans les lotissements récents",
-      "Installations pour les maisons de Marignier",
+      "Entretien d'adoucisseurs dans les lotissements récents de Pontchy",
+      "Installations pour les maisons individuelles à Ayse et Saint-Jeoire",
+      "Pose d'adoucisseurs dans les programmes neufs autour de Bonneville",
+      "Dépannages pour des particuliers à Marcellaz et Bonneville centre",
+    ],
+    faq: [
+      {
+        question: "Quelle est la dureté de l'eau à Bonneville ?",
+        answer:
+          "La dureté de l'eau à Bonneville oscille entre 28 et 38 TH selon les secteurs. Les quartiers reliés aux nappes alluviales de l'Arve affichent les valeurs les plus élevées. À ce niveau, l'eau est classée 'très dure' à 'extrêmement dure', et un adoucisseur est fortement recommandé pour protéger vos équipements domestiques.",
+      },
+      {
+        question: "Intervenez-vous à Ayse et Saint-Jeoire ?",
+        answer:
+          "Oui, nous couvrons Bonneville et toutes les communes de la vallée de l'Arve : Ayse, Saint-Jeoire, Marignier, Reignier-Ésery et les environs. La dureté de l'eau est similaire sur tout ce secteur. Nos techniciens interviennent pour l'installation, l'entretien et le dépannage d'adoucisseurs.",
+      },
+      {
+        question: "J'emménage dans un logement neuf à Bonneville, faut-il un adoucisseur ?",
+        answer:
+          "Oui, et idéalement dès l'emménagement. Dans un logement neuf avec une eau à 30-38 TH, le tartre commence à se déposer dès les premières semaines sur les résistances de chauffe-eau, la robinetterie et les joints. Installer un adoucisseur avant que les dépôts ne s'accumulent protège vos équipements neufs et préserve leur garantie constructeur.",
+      },
     ],
   },
   {
@@ -223,7 +299,7 @@ export const villes: Ville[] = [
     codePostal: "74150",
     zone: "Albanais",
     metaDescription:
-      "Installation et entretien d'adoucisseurs d'eau à Rumilly. Intervention rapide dans l'Albanais.",
+      "Adoucisseur d'eau à Rumilly (74150) — eau extrêmement dure 30-40 TH dans l'Albanais. Installation, entretien et dépannage. Devis gratuit sous 24h.",
     quartiers: [
       "Centre-ville",
       "Moye",
@@ -232,11 +308,30 @@ export const villes: Ville[] = [
       "Massonnaz",
     ],
     caracteristiquesEau:
-      "Les nappes karstiques de l'Albanais produisent une eau très calcaire qui encrasse rapidement les installations.",
+      "Rumilly et l'Albanais comptent parmi les secteurs de Haute-Savoie où l'eau est la plus dure : la dureté atteint 30 à 40 TH, en raison des nappes karstiques particulièrement chargées en carbonates. Ces aquifères traversent des plateaux calcaires typiques de l'Avant-Pays savoyard, qui enrichissent naturellement l'eau en calcium et magnésium bien avant qu'elle n'atteigne les robinets. À Moye, Sales, Boussy et Massonnaz, les habitants constatent rapidement les effets : bouilloires entartrées en quelques semaines, robinetteries tachées, chauffe-eaux qui perdent en efficacité. Sans protection, une résistance de chauffe-eau à 40 TH dure rarement plus de 5 ans. Un adoucisseur correctement dimensionné se rentabilise en moins de 3 ans à Rumilly, en tenant compte des économies sur l'énergie, les produits ménagers et la longévité des appareils.",
     dureteEau: "30-40 TH",
     referencesLocales: [
-      "Installations dans les lotissements familiaux",
-      "Dépannages pour les artisans locaux",
+      "Installations dans les lotissements familiaux de Rumilly",
+      "Dépannages pour des artisans et PME locales",
+      "Entretien d'adoucisseurs à Moye et Sales",
+      "Pose pour des maisons individuelles à Boussy et Massonnaz",
+    ],
+    faq: [
+      {
+        question: "Pourquoi l'eau est-elle si calcaire à Rumilly ?",
+        answer:
+          "Rumilly est alimentée par des nappes karstiques qui traversent les plateaux calcaires de l'Albanais. Ces formations géologiques enrichissent naturellement l'eau en calcium et magnésium. La dureté atteint 30 à 40 TH — parmi les valeurs les plus élevées de Haute-Savoie. À ce niveau, les dépôts de tartre se forment rapidement sur tous les équipements en contact avec l'eau chaude.",
+      },
+      {
+        question: "Intervenez-vous dans les communes autour de Rumilly ?",
+        answer:
+          "Oui, nous couvrons Rumilly et toutes les communes de l'Albanais : Moye, Sales, Boussy, Massonnaz, Hauteville-sur-Fier et les environs. La qualité de l'eau est similaire sur tout le secteur. Nos techniciens interviennent pour l'installation, l'entretien et le dépannage d'adoucisseurs dans toute la zone.",
+      },
+      {
+        question: "Combien de sel consomme un adoucisseur avec une eau à 35-40 TH à Rumilly ?",
+        answer:
+          "Avec une eau à 35-40 TH comme à Rumilly, un adoucisseur pour un foyer de 4 personnes consomme entre 6 et 9 kg de sel par semaine. Prévoyez 2 à 3 sacs de pastilles de 25 kg par mois. C'est la fourchette haute pour la Haute-Savoie — raison pour laquelle un adoucisseur volumétrique (qui régénère selon la consommation réelle et non une minuterie fixe) est particulièrement recommandé pour optimiser la consommation de sel.",
+      },
     ],
   },
   {
@@ -287,7 +382,7 @@ export const villes: Ville[] = [
     codePostal: "74800",
     zone: "Faucigny",
     metaDescription:
-      "Installation et entretien d'adoucisseurs d'eau à La Roche-sur-Foron et dans le Faucigny.",
+      "Adoucisseur d'eau à La Roche-sur-Foron (74800) — eau très dure 26-34 TH dans le Faucigny. Installation, entretien et dépannage. Devis gratuit sous 24h.",
     quartiers: [
       "Centre historique",
       "Saint-Sigismond",
@@ -296,11 +391,30 @@ export const villes: Ville[] = [
       "Etaux",
     ],
     caracteristiquesEau:
-      "L'eau locale est riche en calcium et magnésium, ce qui nécessite un adoucisseur pour protéger la plomberie.",
+      "La Roche-sur-Foron et le Faucigny sont alimentés par des captages dans les formations carbonatées du massif du même nom — calcaires urgoniens et dolomies qui confèrent à l'eau une dureté de 26 à 34 TH. Les communes de Saint-Sigismond, Arenthon et Saint-Pierre-en-Faucigny affichent des valeurs dans la fourchette haute, dues à leur raccordement aux nappes souterraines profondes. La ville connaît un développement pavillonnaire soutenu depuis quelques années, et les propriétaires de logements neufs sont souvent les premiers surpris par la dégradation rapide de leur robinetterie et de leurs équipements. À 28-34 TH, le tartre se forme en quelques mois sur les résistances et les parois de douche. Un adoucisseur installé dès l'emménagement préserve la valeur du bien et réduit significativement les coûts d'entretien courant.",
     dureteEau: "26-34 TH",
     referencesLocales: [
-      "Installations dans les zones pavillonnaires nouvelles",
-      "Entretien pour les PME artisanales",
+      "Installations dans les nouvelles zones pavillonnaires de La Roche-sur-Foron",
+      "Entretien pour des PME artisanales et ateliers locaux",
+      "Pose d'adoucisseurs pour des maisons individuelles à Saint-Sigismond",
+      "Dépannages à Arenthon et Saint-Pierre-en-Faucigny",
+    ],
+    faq: [
+      {
+        question: "Quelle est la dureté de l'eau à La Roche-sur-Foron ?",
+        answer:
+          "La dureté de l'eau à La Roche-sur-Foron varie entre 26 et 34 TH selon les secteurs. Cette eau est classée 'très dure' et provient des formations calcaires du Faucigny. À ces niveaux, le tartre affecte progressivement tous les équipements en contact avec l'eau chaude : chauffe-eau, robinetterie, lave-linge. Un adoucisseur est recommandé pour protéger votre installation.",
+      },
+      {
+        question: "Intervenez-vous à Saint-Sigismond et Arenthon ?",
+        answer:
+          "Oui, nous couvrons La Roche-sur-Foron et l'ensemble du Faucigny : Saint-Sigismond, Arenthon, Saint-Pierre-en-Faucigny, Etaux et les communes alentours. Nos techniciens interviennent pour l'installation, l'entretien et le dépannage d'adoucisseurs dans toute la zone. Devis gratuit sous 24h.",
+      },
+      {
+        question: "J'ai un logement neuf à La Roche-sur-Foron, quand installer un adoucisseur ?",
+        answer:
+          "Le plus tôt possible — idéalement avant le premier emménagement. Avec une eau à 28-34 TH, les dépôts de tartre commencent dès les premières semaines sur les équipements neufs. Installer un adoucisseur dès l'installation préserve la robinetterie, les joints, le chauffe-eau et l'électroménager dans leur état d'origine, et évite les interventions de détartrage coûteuses.",
+      },
     ],
   },
   {

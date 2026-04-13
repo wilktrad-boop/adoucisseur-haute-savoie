@@ -11,7 +11,7 @@ import { departementConfig } from "@/config/departement";
 export const metadata: Metadata = {
   title: `Adoucisseur d'eau en Haute-Savoie (74) — Installation, devis gratuit`,
   description:
-    `Installez un adoucisseur d'eau en Haute-Savoie (74) : eau dure jusqu'à 40 TH à Annecy, Annemasse, Thonon, Chamonix. Devis gratuit sous 24h, intervention dans tout le département.`,
+    `Installez un adoucisseur d'eau en Haute-Savoie (74) : eau dure jusqu'à 40 TH à Annecy, Annemasse, Cluses, Chamonix. Protégez plomberie et électroménager, économisez jusqu'à 30 % d'énergie. Devis gratuit sous 24h.`,
   alternates: {
     canonical: "/adoucisseur",
   },

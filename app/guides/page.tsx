@@ -6,16 +6,16 @@ import { siteConfig } from "@/config/site";
 import { departementConfig } from "@/config/departement";
 
 export const metadata: Metadata = {
-  title: "Guides et conseils sur l'adoucisseur d'eau",
+  title: `Guides adoucisseur d'eau en ${departementConfig.departementName} — Choix, entretien, économies`,
   description:
-    `Guides pratiques et conseils sur l'adoucisseur d'eau : choix, entretien, économies. Tout ce qu'il faut savoir pour bien choisir et entretenir son adoucisseur en ${departementConfig.departementName}.`,
+    `${guides.length} guides pratiques sur l'adoucisseur d'eau en ${departementConfig.departementName} (eau 18-40 TH) : comment choisir, entretenir, économiser. Conseils adaptés à la dureté locale de l'eau.`,
   alternates: {
     canonical: "/guides",
   },
   openGraph: {
-    title: "Guides et conseils sur l'adoucisseur d'eau",
+    title: `Guides adoucisseur d'eau en ${departementConfig.departementName} — Choix, entretien, économies`,
     description:
-      "Guides pratiques et conseils sur l'adoucisseur d'eau : choix, entretien, économies.",
+      `${guides.length} guides pratiques sur l'adoucisseur d'eau en ${departementConfig.departementName} : choix, entretien, sel, économies. Conseils d'experts adaptés à l'eau très dure du 74.`,
     url: `${siteConfig.domain}/guides`,
     type: "website",
     images: [
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
         url: `${siteConfig.domain}/Installation d'un adoucisseur d'eau_hero.webp`,
         width: 1200,
         height: 630,
-        alt: "Guides et conseils sur l'adoucisseur d'eau",
+        alt: `Guides adoucisseur d'eau en ${departementConfig.departementName}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guides et conseils sur l'adoucisseur d'eau",
-    description: "Guides pratiques et conseils sur l'adoucisseur d'eau : choix, entretien, économies.",
+    title: `Guides adoucisseur d'eau en ${departementConfig.departementName} — Choix, entretien, économies`,
+    description: `${guides.length} guides pratiques sur l'adoucisseur d'eau en ${departementConfig.departementName} : choix, entretien, sel, économies.`,
   },
 };
 

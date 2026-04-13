@@ -61,69 +61,144 @@ Contactez-nous pour un devis gratuit et personnalisé en ${departementConfig.dep
   },
   {
     slug: "entretien-adoucisseur-regulier",
-    title: "L'entretien régulier de votre adoucisseur d'eau",
-    description: "Tout ce qu'il faut savoir sur l'entretien d'un adoucisseur d'eau : fréquence, étapes, coûts et conseils pour maintenir votre appareil en bon état.",
+    title: `Entretien adoucisseur d'eau : fréquence, étapes et coûts en ${departementConfig.departementName}`,
+    description: `Guide complet sur l'entretien d'un adoucisseur d'eau en ${departementConfig.departementName} : fréquence selon la dureté de l'eau (25-40 TH), checklist annuelle, coûts et signes d'alerte. Eau très dure = entretien plus fréquent.`,
     date: "2024-03-10",
     content: `
-# L'entretien régulier de votre adoucisseur d'eau
+# Entretien adoucisseur d'eau : fréquence, étapes et coûts en ${departementConfig.departementName}
 
-Un adoucisseur d'eau nécessite un entretien régulier pour fonctionner de manière optimale et durer dans le temps. Voici tout ce qu'il faut savoir.
+Un adoucisseur d'eau est un appareil robuste, mais il ne s'entretient pas seul. En ${departementConfig.departementName}, où la dureté de l'eau atteint couramment 25 à 40 TH selon les zones, les résines travaillent intensément et les cycles de régénération sont fréquents. Résultat : sans entretien adapté, les performances se dégradent silencieusement — et la facture d'intervention finit par dépasser ce qu'un contrat d'entretien annuel aurait coûté. Voici le guide complet pour entretenir votre adoucisseur correctement.
 
-## Pourquoi entretenir son adoucisseur ?
+## Pourquoi l'entretien est indispensable — et plus critique en eau très dure
 
-Un entretien régulier permet de :
-- Maintenir l'efficacité de l'adoucissement
-- Prolonger la durée de vie de l'appareil
-- Éviter les pannes coûteuses
-- Garantir une eau de qualité constante
+Un adoucisseur fonctionne grâce à une résine échangeuse d'ions qui capture les ions calcium et magnésium. Plus l'eau est dure, plus la résine travaille, plus les cycles de régénération au sel sont fréquents. À 30-40 TH (comme à Cluses, Rumilly, Annemasse ou Bonneville), un adoucisseur pour un foyer de 4 personnes peut se régénérer tous les 2 à 3 jours — soit plus de 100 cycles par an.
 
-## Fréquence d'entretien recommandée
+À ce rythme, plusieurs problèmes surviennent si l'entretien est négligé :
+- **Encrassement du bac à sel** : dépôts de boue de sel qui diminuent la qualité de la saumure
+- **Pontage de résine** (channeling) : l'eau passe sans être traitée, l'adoucissement devient inefficace
+- **Colmatage des injecteurs** : les circuits de régénération se bouchent progressivement
+- **Prolifération bactérienne** : la résine humide est un milieu favorable aux bactéries si elle stagne sans maintenance
+- **Déréglage de la programmation** : consommation de sel excessive ou régénérations insuffisantes
 
-Il est recommandé de faire entretenir votre adoucisseur :
-- **Une fois par an minimum** pour une vérification générale
-- **Tous les 6 mois** si vous avez une eau très dure ou une forte consommation
-- **Immédiatement** en cas de signe de dysfonctionnement
+Un adoucisseur non entretenu pendant 3 ans en zone à 35 TH peut voir ses performances chuter de 30 à 50 % — sans que l'utilisateur s'en rende compte immédiatement.
 
-## Les étapes de l'entretien
+## Fréquence d'entretien recommandée selon la dureté de l'eau
 
-### 1. Vérification du niveau de sel
+La fréquence d'entretien n'est pas la même à Chamonix (18-28 TH) et à Rumilly (30-40 TH). Voici les recommandations adaptées à la réalité de l'eau en ${departementConfig.departementName} :
 
-Le sel est essentiel pour la régénération de la résine. Vérifiez régulièrement le niveau de sel dans le bac et rechargez-le si nécessaire.
+| Dureté de l'eau | Zone concernée en ${departementConfig.departementName} | Entretien recommandé |
+|---|---|---|
+| 15-20 TH | Chamonix centre, Sallanches altitude | 1 fois par an |
+| 20-28 TH | Annecy centre, Évian, Thonon nord | 1 fois par an, contrôle sel tous les 2 mois |
+| 28-35 TH | Annecy périphérie, Annemasse, La Roche-sur-Foron | 2 fois par an |
+| 35-40 TH | Cluses, Bonneville, Rumilly, Vallée de l'Arve | 2 fois par an + contrôle mensuel |
 
-### 2. Nettoyage du bac à sel
+Pour les foyers avec forte consommation d'eau (> 5 personnes, usage professionnel, location saisonnière), augmentez d'un cran la fréquence quelle que soit la dureté.
 
-Le bac à sel doit être nettoyé régulièrement pour éviter l'encrassement et les dépôts.
+## Les 7 étapes d'un entretien complet
 
-### 3. Vérification de la résine
+### 1. Test de la dureté en entrée et en sortie
 
-La résine échangeuse d'ions doit être vérifiée et éventuellement remplacée tous les 5 à 10 ans selon l'utilisation.
+L'entretien commence toujours par un test de dureté : mesurer la dureté de l'eau en entrée (avant l'adoucisseur) et en sortie (eau adoucie). Une eau de sortie correctement adoucie doit être entre **8 et 15 TH**. En dessous de 8 TH, l'eau peut devenir agressive pour les canalisations cuivre. Au-dessus de 15 TH, l'adoucisseur sous-performe.
 
-### 4. Contrôle de la programmation
+Si la dureté de sortie dépasse 15 TH alors que le sel est présent, c'est le signe d'un problème de résine ou de programmation.
 
-Vérifiez que la programmation de la régénération est correcte et adaptée à votre consommation.
+### 2. Inspection et nettoyage du bac à sel
 
-### 5. Test de la dureté de l'eau
+Le bac à sel accumule au fil du temps des boues de sel impures, des dépôts de calcium et parfois une croûte dure en surface (pont de sel). Ces dépôts perturbent la dissolution du sel et dégradent la qualité de la saumure.
 
-Un test de dureté permet de vérifier que l'adoucisseur fonctionne correctement.
+Lors d'un entretien sérieux :
+- Vidanger le bac complètement
+- Rincer les parois à l'eau claire
+- Vérifier l'absence de corps étrangers (insectes, débris)
+- Inspecter le flotteur de niveau de saumure
 
-## Les signes d'un entretien nécessaire
+### 3. Régénération manuelle forcée
 
-Plusieurs signes peuvent indiquer qu'un entretien est nécessaire :
-- Eau moins douce qu'à l'habitude
-- Consommation de sel anormale
-- Bruit inhabituel lors de la régénération
-- Eau trouble ou goût étrange
-- Appareil qui ne se régénère plus
+Forcer une régénération manuelle permet de purger la résine et les circuits avant le reste de l'entretien. C'est aussi l'occasion de vérifier que le cycle de régénération se déroule correctement (bruits normaux, durée conforme, évacuation correcte).
+
+### 4. Nettoyage et désinfection de la résine
+
+Avec le temps, la résine peut s'encrasser avec du fer, du manganèse ou des matières organiques présentes en traces dans l'eau du réseau. En ${departementConfig.departementName}, la présence de fer dissous dans certains captages (notamment les nappes alluviales de l'Arve) peut accélérer ce phénomène.
+
+Un nettoyant résine spécifique (type résine cleaner) est utilisé lors de l'entretien pour purger ces dépôts et restaurer la capacité d'échange ionique. Ce nettoyage n'est pas prévu dans la routine DIY standard — c'est une des raisons pour lesquelles un entretien professionnel reste recommandé tous les 1 à 2 ans.
+
+### 5. Vérification et nettoyage des injecteurs et clapets
+
+Les injecteurs de saumure (petites pièces en plastique ou inox) sont des points de colmatage fréquents. Un injecteur bouché provoque une régénération incomplète et une consommation de sel en hausse. Les clapets anti-retour et les électrovannes sont également inspectés.
+
+### 6. Contrôle et reprogrammation du minuteur ou du compteur volumétrique
+
+La programmation doit être vérifiée et ajustée si la consommation d'eau du foyer a évolué (arrivée d'un enfant, résidence secondaire en location...). Les adoucisseurs volumétriques modernes s'adaptent automatiquement, mais leur paramétrage initial doit correspondre à la dureté réelle de votre eau — celle-ci peut varier légèrement d'une saison à l'autre dans certains secteurs de ${departementConfig.departementName}.
+
+### 7. Remplacement des joints et pièces d'usure si nécessaire
+
+Joints toriques, piston de vanne, flotteur de bac à sel : ces pièces s'usent progressivement. Les remplacer lors de l'entretien annuel évite une panne future. Le coût d'un jeu de joints reste très inférieur à une intervention d'urgence.
+
+## Checklist d'entretien : ce que vous pouvez faire vous-même
+
+Certaines opérations ne nécessitent pas de technicien et peuvent être réalisées régulièrement par le propriétaire :
+
+| Fréquence | Action à réaliser |
+|---|---|
+| Chaque semaine | Vérifier le niveau de sel dans le bac (ne jamais laisser le bac vide) |
+| Chaque mois | Vérifier visuellement l'absence de pont de sel, écouter les bruits lors d'une régénération |
+| Tous les 2-3 mois | Tester la dureté de l'eau en sortie avec une bandelette de test |
+| Chaque année | Entretien complet par un professionnel (ou tous les 6 mois en zone > 30 TH) |
+| Tous les 5-10 ans | Remplacement de la résine échangeuse d'ions |
+
+## Ce qu'il se passe si vous n'entretenez pas votre adoucisseur
+
+Négliger l'entretien d'un adoucisseur en zone d'eau très dure comme en ${departementConfig.departementName} entraîne une dégradation progressive et coûteuse :
+
+**À 6 mois sans entretien** : légère baisse de performance, consommation de sel légèrement supérieure, début d'encrassement du bac.
+
+**À 1-2 ans sans entretien** : dureté de sortie remontant au-dessus de 15 TH, tartre qui recommence à se déposer sur la robinetterie et les résistances, sel moins bien dissous.
+
+**À 3 ans ou plus sans entretien** : résine partiellement colmatée nécessitant un remplacement prématuré (entre 300 € et 600 € selon le modèle), risque de panne sur la vanne de régénération, prolifération bactérienne possible dans la résine.
+
+Un remplacement de résine à 400 € représente 4 à 6 ans d'un contrat d'entretien annuel. La maintenance régulière est clairement plus économique sur la durée.
+
+## Coûts d'entretien : DIY vs professionnel en ${departementConfig.departementName}
+
+### Entretien DIY (par le propriétaire)
+
+- Sel régénérant (pastilles 25 kg) : 8 à 15 € le sac — budget annuel de 200 à 500 € selon la dureté locale et le foyer
+- Bandelettes de test dureté : 5 à 15 € pour 50 tests
+- Nettoyant résine : 10 à 25 € par traitement annuel
+- **Total annuel DIY (hors sel) : 20 à 40 €**
+
+### Entretien professionnel en ${departementConfig.departementName}
+
+Un contrat d'entretien annuel chez un spécialiste local comprend généralement : visite technique, nettoyage complet, test de dureté, réglage de la programmation, vérification des pièces d'usure.
+
+- **Contrat entretien annuel** : 80 à 150 € selon le modèle et le prestataire
+- **Entretien ponctuel sans contrat** : 100 à 200 € selon les interventions nécessaires
+- **Remplacement de résine** : 300 à 600 € (main-d'œuvre + résine)
+- **Remplacement de vanne** : 200 à 400 € selon la marque
+
+Pour une eau à 30-40 TH (Cluses, Rumilly, Annemasse), un contrat d'entretien bisannuel à 120 €/visite représente 240 € par an — à mettre en regard des économies réalisées sur le sel, l'énergie et la durée de vie de vos appareils.
+
+## Les signes d'alerte : quand appeler un professionnel immédiatement
+
+Certains symptômes indiquent un dysfonctionnement sérieux qui ne doit pas attendre l'entretien annuel :
+
+- **Retour du tartre** sur les robinets, la douche ou dans la bouilloire alors que l'adoucisseur tourne
+- **Surconsommation brutale de sel** : si votre bac se vide deux fois plus vite qu'à l'habitude
+- **Eau avec goût salé** : signe d'une vanne de régénération défaillante qui laisse passer la saumure
+- **Bruit de claquement ou de grattement** lors de la régénération
+- **Fuite d'eau** autour de la vanne ou du bac à sel
+- **Pression d'eau chutant brutalement** après installation de l'adoucisseur (colmatage possible)
+
+En ${departementConfig.departementName}, l'eau très dure peut transformer une panne mineure en problème majeur rapidement : un adoucisseur qui ne traite plus l'eau à 35 TH laisse le tartre s'accumuler sur vos équipements à un rythme accéléré.
 
 ## Faire appel à un professionnel en ${departementConfig.departementName}
 
-Pour un entretien complet et professionnel, faites appel à un spécialiste qui pourra :
-- Effectuer un diagnostic complet
-- Nettoyer et vérifier tous les composants
-- Ajuster les réglages si nécessaire
-- Vous conseiller sur les bonnes pratiques
+L'entretien d'un adoucisseur en zone d'eau très dure mérite l'intervention d'un technicien qui connaît les spécificités locales : dureté variable entre les secteurs (18 TH à Chamonix, 40 TH dans la vallée de l'Arve), présence de fer dissous dans certains captages, eaux chargées en matières organiques dans d'autres zones.
 
-Contactez-nous pour programmer l'entretien de votre adoucisseur en ${departementConfig.departementName}.
+Nous intervenons pour l'entretien et le dépannage d'adoucisseurs sur tout le département : Annecy, Annemasse, Thonon-les-Bains, Cluses, Bonneville, Chamonix, Sallanches, Rumilly, La Roche-sur-Foron et toutes les communes environnantes.
+
+Contactez-nous pour programmer l'entretien de votre adoucisseur ou obtenir un devis pour un contrat d'entretien adapté à la dureté de votre eau.
     `.trim(),
   },
   {

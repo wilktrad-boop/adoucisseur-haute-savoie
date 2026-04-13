@@ -480,8 +480,36 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* FAQ Section */}
+      {/* Contexte eau Haute-Savoie */}
       <Section className="py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-6">
+            Pourquoi l'eau de {departementConfig.departementName} nécessite un adoucisseur
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
+            <p>
+              La {departementConfig.departementName} est l'un des départements français où la dureté de l'eau est la plus élevée. Alimentée par des nappes souterraines qui traversent des formations géologiques calcaires — calcaires urgoniens, molasses miocènes, dolomies alpines — l'eau du robinet est classée <strong>« dure » à « très dure »</strong> dans la grande majorité des communes, avec des valeurs allant de 18 TH à Chamonix jusqu'à 40 TH dans la vallée de l'Arve et l'Albanais.
+            </p>
+            <p>
+              Dans le <strong>bassin annécien</strong>, la dureté varie de 20 à 30 TH selon les quartiers : les secteurs centraux alimentés par le lac d'Annecy (20-23 TH) côtoient des zones périphériques comme Seynod, Meythet ou Annecy-le-Vieux, raccordées au réseau intercommunal du SILA, qui reçoivent une eau sensiblement plus calcaire (25-30 TH). Dans le <strong>Genevois français</strong> — Annemasse, Saint-Julien-en-Genevois, Vétraz-Monthoux — les nappes alluviales de l'Arve et les aquifères karstiques du Salève fournissent une eau parmi les plus dures du département : 28 à 38 TH.
+            </p>
+            <p>
+              La <strong>vallée de l'Arve</strong> (Cluses, Bonneville, Marignier) affiche des valeurs encore supérieures, pouvant dépasser 35 à 40 TH dans certains secteurs. À l'inverse, le <strong>Pays du Mont-Blanc</strong> bénéficie d'une eau légèrement plus douce grâce aux sources alpines d'altitude, sans pour autant être exempt de calcaire : Chamonix reste à 18-28 TH, Sallanches à 22-32 TH. Le <strong>Chablais</strong> (Thonon, Évian) et l'<strong>Albanais</strong> (Rumilly) complètent ce tableau avec des eaux de 25-35 TH.
+            </p>
+            <p>
+              Concrètement, dès 15 TH, le tartre se dépose progressivement sur les résistances de chauffe-eau, les robinetteries, les joints et les parois de douche. En {departementConfig.departementName}, où la moyenne dépasse 25 TH, les effets sont visibles en quelques mois : électroménager qui tombe en panne prématurément, factures d'énergie en hausse, traces blanches tenaces sur la robinetterie. Un adoucisseur à résine échangeuse d'ions, correctement dimensionné pour la dureté locale de votre commune, élimine ces problèmes à la source en produisant une eau adoucie entre 8 et 15 TH.
+            </p>
+            <p className="text-center">
+              <Link href="/guides/durete-eau-haute-savoie" className="text-primary-600 font-medium hover:underline">
+                Consultez notre carte détaillée de la dureté de l'eau par secteur en {departementConfig.departementName} →
+              </Link>
+            </p>
+          </div>
+        </div>
+      </Section>
+
+      {/* FAQ Section */}
+      <Section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Questions fréquentes
