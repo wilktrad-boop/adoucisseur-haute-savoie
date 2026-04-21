@@ -328,9 +328,50 @@ export default function QualiteEauHauteSavoiePage() {
         </div>
       </Section>
 
-      {/* Related services */}
+      {/* Liens vers départements partenaires */}
       <Section className="py-12">
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Qualité de l'eau dans les départements voisins
+          </h2>
+          <p className="text-gray-600 text-sm mb-6">
+            L'eau calcaire est un phénomène régional. Consultez les données des départements proches :
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4 mb-12">
+            <a
+              href="https://adoucisseur-yonne.fr/qualite-eau-yonne"
+              target="_blank"
+              rel="noopener"
+              className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-400 hover:shadow-md transition"
+            >
+              <p className="font-semibold text-gray-900 group-hover:text-primary-600 transition mb-1">
+                Qualité de l'eau dans l'Yonne (89)
+              </p>
+              <p className="text-sm text-gray-500">23 à 38 TH · Auxerre, Sens, Joigny</p>
+            </a>
+            <a
+              href="https://www.adoucisseur-ain.fr/qualite-eau-ain"
+              target="_blank"
+              rel="noopener"
+              className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-400 hover:shadow-md transition"
+            >
+              <p className="font-semibold text-gray-900 group-hover:text-primary-600 transition mb-1">
+                Qualité de l'eau dans l'Ain (01)
+              </p>
+              <p className="text-sm text-gray-500">22 à 36 TH · Bourg-en-Bresse, Gex, Oyonnax</p>
+            </a>
+            <a
+              href="https://www.adoucisseur-isere.fr/qualite-eau"
+              target="_blank"
+              rel="noopener"
+              className="group block bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-400 hover:shadow-md transition"
+            >
+              <p className="font-semibold text-gray-900 group-hover:text-primary-600 transition mb-1">
+                Qualité de l'eau en Isère (38)
+              </p>
+              <p className="text-sm text-gray-500">20 à 35 TH · Grenoble, Voiron, Vienne</p>
+            </a>
+          </div>
           <RelatedServices currentService="qualite-eau-haute-savoie" />
         </div>
       </Section>
