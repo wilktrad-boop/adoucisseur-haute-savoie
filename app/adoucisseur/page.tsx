@@ -9,14 +9,14 @@ import { siteConfig } from "@/config/site";
 import { departementConfig } from "@/config/departement";
 
 export const metadata: Metadata = {
-  title: `Adoucisseur d'eau en Haute-Savoie (74) — Installation, devis gratuit`,
+  title: `Installation d'un adoucisseur d'eau en Haute-Savoie (74) — Devis gratuit`,
   description:
     `Installez un adoucisseur d'eau en Haute-Savoie (74) : eau dure jusqu'à 40 TH à Annecy, Annemasse, Cluses, Chamonix. Protégez plomberie et électroménager, économisez jusqu'à 30 % d'énergie. Devis gratuit sous 24h.`,
   alternates: {
     canonical: "/adoucisseur",
   },
   openGraph: {
-    title: `Adoucisseur d'eau en Haute-Savoie (74) — Installation, devis gratuit`,
+    title: `Installation d'un adoucisseur d'eau en Haute-Savoie (74) — Devis gratuit`,
     description:
       `Installation d'adoucisseur d'eau en Haute-Savoie : eau dure 18-40 TH selon les zones. Devis gratuit sous 24h pour Annecy, Annemasse, Thonon et tout le 74.`,
     url: `${siteConfig.domain}/adoucisseur`,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `Adoucisseur d'eau en Haute-Savoie (74) — Installation, devis gratuit`,
+    title: `Installation d'un adoucisseur d'eau en Haute-Savoie (74) — Devis gratuit`,
     description: `Installation d'adoucisseur d'eau en Haute-Savoie : eau dure 18-40 TH. Devis gratuit sous 24h.`,
   },
 };
@@ -111,7 +111,7 @@ export default function AdoucisseurPage() {
           <span>Installation adoucisseur d'eau en Haute-Savoie</span>
         </nav>
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Adoucisseur d'eau en Haute-Savoie (74)
+          Installation d'un adoucisseur d'eau en Haute-Savoie
         </h1>
         <p className="text-lg text-gray-700 max-w-3xl">
           Eau dure de 18 à 40 TH selon les zones — Genevois français, Chablais, vallée de l'Arve, bassin annécien. Un adoucisseur adapté protège vos équipements et améliore votre confort au quotidien. Devis gratuit sous 24h, intervention dans tout le département.

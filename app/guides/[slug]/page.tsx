@@ -73,33 +73,148 @@ function extractHeadings(content: string) {
     });
 }
 
+// Rend le formatage inline : liens markdown [texte](url) et gras **texte**
+function renderInline(text: string): string {
+  let html = text.replace(
+    /\[([^\]]+)\]\(([^)]+)\)/g,
+    (_m, label: string, url: string) => {
+      const internal = url.startsWith("/") || url.startsWith("#");
+      const rel = internal ? "" : ' target="_blank" rel="noopener noreferrer"';
+      return `<a href="${url}" class="text-primary-600 font-medium underline hover:text-primary-700"${rel}>${label}</a>`;
+    }
+  );
+  html = html.replace(
+    /\*\*([^*]+)\*\*/g,
+    '<strong class="font-semibold text-gray-900">$1</strong>'
+  );
+  return html;
+}
+
 function formatContent(content: string): string {
-  return content
-    .split("\n")
-    .map((line) => {
-      if (line.startsWith("# ")) {
-        return `<h1 class="text-3xl font-bold text-gray-900 mb-4">${line.substring(2)}</h1>`;
+  const lines = content.split("\n");
+  const out: string[] = [];
+  let listType: "ul" | "ol" | null = null;
+  let i = 0;
+
+  const closeList = () => {
+    if (listType) {
+      out.push(listType === "ul" ? "</ul>" : "</ol>");
+      listType = null;
+    }
+  };
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    // Tableau markdown : ligne d'en-tête `| .. | .. |` suivie d'un séparateur `|---|`
+    if (
+      line.trim().startsWith("|") &&
+      i + 1 < lines.length &&
+      /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])
+    ) {
+      closeList();
+      const cells = (row: string) =>
+        row.split("|").slice(1, -1).map((c) => c.trim());
+      const headers = cells(line);
+      i += 2; // saute l'en-tête + le séparateur
+      const rows: string[][] = [];
+      while (i < lines.length && lines[i].trim().startsWith("|")) {
+        rows.push(cells(lines[i]));
+        i++;
       }
-      if (line.startsWith("## ")) {
-        const text = line.substring(3).trim();
-        const id = headingToId(text);
-        return `<h2 id="${id}" class="text-2xl font-bold text-gray-900 mb-4 mt-8 scroll-mt-24">${text}</h2>`;
+      const thead = `<thead><tr>${headers
+        .map(
+          (c) =>
+            `<th class="border border-gray-300 bg-gray-50 px-4 py-2 text-left font-semibold text-gray-900">${renderInline(c)}</th>`
+        )
+        .join("")}</tr></thead>`;
+      const tbody = `<tbody>${rows
+        .map(
+          (r) =>
+            `<tr>${r
+              .map(
+                (c) =>
+                  `<td class="border border-gray-300 px-4 py-2 text-gray-700">${renderInline(c)}</td>`
+              )
+              .join("")}</tr>`
+        )
+        .join("")}</tbody>`;
+      out.push(
+        `<div class="overflow-x-auto mb-6"><table class="w-full border-collapse text-sm">${thead}${tbody}</table></div>`
+      );
+      continue;
+    }
+
+    if (line.startsWith("# ")) {
+      closeList();
+      out.push(
+        `<h1 class="text-3xl font-bold text-gray-900 mb-4">${renderInline(line.substring(2))}</h1>`
+      );
+      i++;
+      continue;
+    }
+    if (line.startsWith("## ")) {
+      closeList();
+      const text = line.substring(3).trim();
+      const id = headingToId(text);
+      out.push(
+        `<h2 id="${id}" class="text-2xl font-bold text-gray-900 mb-4 mt-8 scroll-mt-24">${renderInline(text)}</h2>`
+      );
+      i++;
+      continue;
+    }
+    if (line.startsWith("### ")) {
+      closeList();
+      out.push(
+        `<h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">${renderInline(line.substring(4))}</h3>`
+      );
+      i++;
+      continue;
+    }
+    if (/^[-*]\s/.test(line)) {
+      if (listType !== "ul") {
+        closeList();
+        out.push('<ul class="list-disc ml-6 mb-4 space-y-1">');
+        listType = "ul";
       }
-      if (line.startsWith("### ")) {
-        return `<h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">${line.substring(4)}</h3>`;
+      out.push(
+        `<li class="text-gray-700">${renderInline(line.replace(/^[-*]\s/, ""))}</li>`
+      );
+      i++;
+      continue;
+    }
+    if (/^\d+\.\s/.test(line)) {
+      if (listType !== "ol") {
+        closeList();
+        out.push('<ol class="list-decimal ml-6 mb-4 space-y-1">');
+        listType = "ol";
       }
-      if (line.startsWith("- ") || line.startsWith("* ")) {
-        return `<li class="ml-4">${line.substring(2)}</li>`;
-      }
-      if (line.trim() === "") {
-        return "<br />";
-      }
-      if (line.startsWith("**") && line.endsWith("**")) {
-        return `<p class="font-semibold text-gray-900 mb-2">${line.substring(2, line.length - 2)}</p>`;
-      }
-      return `<p class="text-gray-700 mb-4">${line}</p>`;
-    })
-    .join("\n");
+      out.push(
+        `<li class="text-gray-700">${renderInline(line.replace(/^\d+\.\s/, ""))}</li>`
+      );
+      i++;
+      continue;
+    }
+
+    closeList();
+
+    if (line.trim() === "") {
+      out.push("<br />");
+      i++;
+      continue;
+    }
+    if (line.startsWith("**") && line.endsWith("**")) {
+      out.push(
+        `<p class="font-semibold text-gray-900 mb-2">${renderInline(line.substring(2, line.length - 2))}</p>`
+      );
+      i++;
+      continue;
+    }
+    out.push(`<p class="text-gray-700 mb-4">${renderInline(line)}</p>`);
+    i++;
+  }
+  closeList();
+  return out.join("\n");
 }
 
 export default async function GuidePage({ params }: PageProps) {

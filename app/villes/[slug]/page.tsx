@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return {};
   }
 
-  const title = `Installation et entretien d'adoucisseurs d'eau à ${ville.nom}`;
+  const title = `Adoucisseur d'eau à ${ville.nom} (${ville.codePostal}) — Installation & entretien`;
   const description =
     ville.metaDescription ||
     `Installation et entretien d'adoucisseurs d'eau à ${ville.nom} (${ville.codePostal}). Devis gratuit pour votre adoucisseur d'eau en ${departementConfig.departementName}.`;
@@ -136,7 +136,7 @@ export default async function VillePage({ params }: PageProps) {
         <div className="relative z-10">
           <Breadcrumb items={[{ label: "Villes", href: "/villes" }, { label: ville.nom }]} />
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Installation et entretien d'adoucisseurs d'eau à {ville.nom}
+            Adoucisseur d'eau à {ville.nom} : installation et entretien
           </h1>
           <p className="text-lg text-gray-700 max-w-3xl">
             Résidents de {ville.nom} ({ville.codePostal}), bénéficiez d'un service de mise en contact avec des experts certifiés du traitement de l'eau. Notre réseau couvre toute la {departementConfig.departementName} pour vos besoins en pose, maintenance et réparation de systèmes anti-calcaire.

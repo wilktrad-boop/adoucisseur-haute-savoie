@@ -386,31 +386,31 @@ En France, la valeur moyenne est d'environ 20 TH. En ${departementConfig.departe
 
 ### Annecy et agglomération (20-30 TH)
 
-L'eau d'Annecy est alimentée en partie par le lac d'Annecy, ce qui tempère la dureté dans les quartiers centraux. Cependant, les secteurs raccordés au réseau intercommunal (Annecy-le-Vieux, Seynod, Meythet, Cran-Gevrier) reçoivent une eau plus calcaire, issue de captages souterrains. La dureté varie de 20 à 30 TH selon les quartiers.
+L'eau d'Annecy est alimentée en partie par le lac d'Annecy, ce qui tempère la dureté dans les quartiers centraux. Cependant, les secteurs raccordés au réseau intercommunal (Annecy-le-Vieux, Seynod, Meythet, Cran-Gevrier) reçoivent une eau plus calcaire, issue de captages souterrains. La dureté varie de 20 à 30 TH selon les quartiers. Découvrez nos solutions d'[adoucisseur d'eau à Annecy](/villes/annecy).
 
 ### Genevois français — Annemasse, Saint-Julien-en-Genevois (28-38 TH)
 
-C'est l'un des secteurs les plus touchés par la dureté de l'eau en ${departementConfig.departementName}. Les nappes alluviales de l'Arve et les aquifères karstiques du Salève fournissent une eau chargée en calcium et magnésium. La dureté atteint couramment 30 à 38 TH à Annemasse, Vétraz-Monthoux, Archamps, Viry et Collonges-sous-Salève.
+C'est l'un des secteurs les plus touchés par la dureté de l'eau en ${departementConfig.departementName}. Les nappes alluviales de l'Arve et les aquifères karstiques du Salève fournissent une eau chargée en calcium et magnésium. La dureté atteint couramment 30 à 38 TH à Annemasse, Vétraz-Monthoux, Archamps, Viry et Collonges-sous-Salève. Nous intervenons pour l'installation d'un [adoucisseur à Annemasse](/villes/annemasse) et à [Saint-Julien-en-Genevois](/villes/saint-julien-en-genevois).
 
 ### Chablais — Thonon-les-Bains, Évian-les-Bains (22-35 TH)
 
-Le Chablais présente une dureté élevée malgré la proximité du lac Léman. L'eau de Thonon-les-Bains peut atteindre 35 TH. Évian-les-Bains, bien que célèbre pour sa source minérale, distribue sur son réseau public une eau à 22-30 TH issue d'autres captages alpins — et non la fameuse source Évian, qui est un captage privé.
+Le Chablais présente une dureté élevée malgré la proximité du lac Léman. L'eau de Thonon-les-Bains peut atteindre 35 TH. Évian-les-Bains, bien que célèbre pour sa source minérale, distribue sur son réseau public une eau à 22-30 TH issue d'autres captages alpins — et non la fameuse source Évian, qui est un captage privé. Voir nos services d'[adoucisseur à Thonon-les-Bains](/villes/thonon-les-bains) et à [Évian-les-Bains](/villes/evian-les-bains).
 
 ### Vallée de l'Arve — Cluses, Bonneville (28-40 TH)
 
-La vallée de l'Arve est caractérisée par des eaux extrêmement dures, issues de captages dans les roches sédimentaires calcaires du massif du Faucigny. La dureté peut dépasser 35 TH à Cluses, Bonneville et Marignier. C'est une des zones où l'installation d'un adoucisseur est la plus vivement recommandée.
+La vallée de l'Arve est caractérisée par des eaux extrêmement dures, issues de captages dans les roches sédimentaires calcaires du massif du Faucigny. La dureté peut dépasser 35 TH à Cluses, Bonneville et Marignier. C'est une des zones où l'installation d'un adoucisseur est la plus vivement recommandée : voir nos pages [adoucisseur à Cluses](/villes/cluses) et [adoucisseur à Bonneville](/villes/bonneville).
 
 ### Pays du Mont-Blanc — Sallanches, Chamonix (18-32 TH)
 
-Plus on monte en altitude, plus l'eau est influencée par la fonte glaciaire et les sources alpines, naturellement plus douces. À Chamonix, la dureté oscille entre 18 et 28 TH. Sallanches et ses environs affichent des valeurs de 22 à 32 TH. L'eau reste calcaire mais la situation est globalement moins extrême que dans la vallée basse.
+Plus on monte en altitude, plus l'eau est influencée par la fonte glaciaire et les sources alpines, naturellement plus douces. À Chamonix, la dureté oscille entre 18 et 28 TH. Sallanches et ses environs affichent des valeurs de 22 à 32 TH. L'eau reste calcaire mais la situation est globalement moins extrême que dans la vallée basse. Retrouvez nos interventions d'[adoucisseur à Sallanches](/villes/sallanches) et à [Chamonix](/villes/chamonix).
 
 ### Albanais — Rumilly (30-40 TH)
 
-L'Albanais est alimenté par des nappes karstiques particulièrement chargées en carbonates. Rumilly et ses environs affichent des niveaux de dureté parmi les plus élevés du département, entre 30 et 40 TH. Les installations de plomberie vieillissent rapidement sans protection anti-calcaire.
+L'Albanais est alimenté par des nappes karstiques particulièrement chargées en carbonates. Rumilly et ses environs affichent des niveaux de dureté parmi les plus élevés du département, entre 30 et 40 TH. Les installations de plomberie vieillissent rapidement sans protection anti-calcaire : découvrez nos solutions d'[adoucisseur à Rumilly](/villes/rumilly).
 
 ### Faucigny — La Roche-sur-Foron (26-34 TH)
 
-La Roche-sur-Foron et le Faucigny présentent une eau dure à très dure (26-34 TH), issue de captages dans les formations carbonatées du massif. Les zones pavillonnaires récentes sont particulièrement exposées, avec des équipements neufs qui se détériorent prématurément.
+La Roche-sur-Foron et le Faucigny présentent une eau dure à très dure (26-34 TH), issue de captages dans les formations carbonatées du massif. Les zones pavillonnaires récentes sont particulièrement exposées, avec des équipements neufs qui se détériorent prématurément. Voir notre page [adoucisseur à La Roche-sur-Foron](/villes/la-roche-sur-foron).
 
 ## Comment mesurer la dureté de l'eau chez soi ?
 
@@ -435,7 +435,7 @@ L'installation d'un adoucisseur est recommandée dès **15 TH**. En ${departemen
 
 ### L'adoucisseur à résine échangeuse d'ions
 
-C'est la solution la plus efficace et la plus répandue pour un traitement total de l'eau entrante. Il élimine calcium et magnésium par échange ionique, produisant une eau "douce" (3-8 TH) pour toutes les utilisations domestiques. Nécessite du sel régénérant (4 à 9 kg/semaine selon la dureté locale) et un entretien annuel.
+C'est la solution la plus efficace et la plus répandue pour un traitement total de l'eau entrante. Il élimine calcium et magnésium par échange ionique, produisant une eau "douce" (3-8 TH) pour toutes les utilisations domestiques. Nécessite du sel régénérant (4 à 9 kg/semaine selon la dureté locale) et un [entretien annuel](/entretien-adoucisseur). Découvrez le fonctionnement et le [prix d'un adoucisseur d'eau](/prix-adoucisseur), ou notre service complet d'[installation d'adoucisseur](/adoucisseur).
 
 ### Les anti-tartre magnétiques ou électroniques
 
@@ -452,7 +452,7 @@ Le choix de l'adoucisseur doit être adapté à la dureté locale de votre eau e
 - Dimensionner l'adoucisseur en fonction de votre consommation réelle
 - Vous proposer un devis adapté à votre budget
 
-Contactez-nous pour un devis gratuit et personnalisé en ${departementConfig.departementName}.
+[Contactez-nous pour un devis gratuit](/contact) et personnalisé en ${departementConfig.departementName}, ou découvrez notre service d'[installation d'adoucisseur d'eau](/adoucisseur) dans tout le département.
     `.trim(),
   },
 ];
